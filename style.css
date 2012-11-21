@@ -1,0 +1,273 @@
+body {
+    color: #555;
+    margin: 0;
+    font: normal 15px/1.75 "TIBch", "Grotesque MT W01", "Helvetica Neue", "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    border-top: 6px solid #000;
+    background: #F8F8F5;
+}
+
+.container {
+    width: 650px;
+    margin: 0px auto;
+    padding: 50px 70px;    
+
+}
+
+
+a {
+    color: #9F9F9F;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navi {
+    font-size: 12px;
+    margin-left: -20px;
+}
+
+
+.navi .navi-item {
+    margin-right: 5px;
+}
+
+.navi .navi-item a {
+    color: #333;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 3px 5px 3px 5px;
+    text-decoration: none;
+}
+
+.navi .navi-item a:hover {
+    text-decoration: none;
+    background: #333;
+    color: #fff;
+}
+
+pre {
+    font-family: Menlo,Monaco,monospace;
+    font-size: 14px;
+    border: 0px;
+    background: #eee;
+    color: #555;
+    padding: 0px;
+    border-radius: 3px;
+}
+
+p img {
+    max-width: 650px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.titleline {
+}
+
+
+
+
+
+blockquote {
+    color: #7d7d7d;
+}
+
+.pagetitle h1{
+    color: #333;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+.container .titleline a.about {
+    text-decoration: none;
+    font-size:16px;
+    color: #999;
+    font-weight: bold;
+}
+
+
+.container .titleline a.about:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 60px;
+    font-family: "Grotesque MT W01 Bold", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", "Microsoft YaHei", SimSun, sans-serif;
+    padding-bottom: 2px;
+}
+
+.title a {
+    color: black;
+}
+
+.title a:hover {
+    text-decoration: underline;
+}
+
+.postview {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 20px;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+.allposts {
+    width: 100%;
+    height: 25px;
+    display: block;
+}
+
+
+
+.allposts .postdate {
+    color: #aaa;
+    display: inline-block;
+    width: 90px;
+    margin-right:5px;
+    text-align: right;
+}
+
+.allposts .postlink {
+    margin-left: 2px;
+}
+
+.allpostslink {
+    text-align: center;
+    display: block;
+    margin: 60px 30px 30px 30px;
+}
+
+.allpostslink a {
+    font-weight: bold;
+    padding: 15px;
+    background: #ddd;
+}
+
+
+.allpostslink a:hover {
+    text-decoration: none;
+}
+
+
+.footer{
+    text-align:center;
+    background: black;
+    color: #fff;
+    height: 80px;
+    padding: 20px;
+}
+
+
+.the-end-of-the-world {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.the-end-of-the-world  a{
+    color: #aaa;
+    padding: 2px 5px;
+    border: 1px solid #E7E7E7;
+}
+
+.current-page {
+    padding: 2px 5px;
+    color: black;
+    border: 1px solid #E7E7E7;
+}
+
+.the-end-of-the-world  a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: black;
+}
+
+
+
+.content {
+    padding: 0px 20px 20px 20px;
+    margin: 40px -20px 20px -20px; 
+
+}
+
+
+
+
+
+.catelist {
+    float: left;
+    width: 300px;
+    margin-right: 15px;
+}
+
+
+.meta {
+    position: absolute;
+    right: 5px;
+    top: 6px;
+}
+.meta img:hover {
+    opacity: 0.75;
+}
+
+.meta a {
+    text-decoration:none;
+    color: black;
+}
+
+.meta a:hover {
+    text-decoration:none;
+}
+
+.meta .show {
+    display: none;
+    position:absolute;
+    right: 6px;
+    top: 16px;
+    z-index: 1;
+    width: 250px;
+    text-align: right;
+}
+
+.meta a:hover .show {
+    display: block;
+    
+}
+
+
+
+.timestamp {
+    color: #7d7d7d;
+}
+
+.blogtitle a {
+    font-size: 32px;
+    font-weight: bold;
+    color:black;
+}
+
+.blogtitle a:hover {
+    text-decoration: none;
+}
+
+code {
+    margin:0px;
+    padding:0px;
+}
