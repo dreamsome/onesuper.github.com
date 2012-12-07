@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    width: 650px;
+    width: 500px;
     margin: 0px auto;
     padding: 50px 70px;    
 
@@ -64,7 +64,7 @@ pre {
 }
 
 p img {
-    max-width: 650px;
+    max-width: 480px;
     padding: 5px;
     border: 1px solid #ddd;
     background: #fff;
@@ -116,12 +116,12 @@ blockquote {
 }
 
 .title a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 1px solid black;
 }
 
 .postview {
     margin-bottom: 40px;
-    border-bottom: 1px solid #DDDDDD;
     padding-bottom: 20px;
 }
 
@@ -169,10 +169,8 @@ p {
 
 .footer{
     text-align:center;
-    background: black;
-    color: #fff;
     height: 80px;
-    padding: 20px;
+
 }
 
 
@@ -255,6 +253,13 @@ p {
 
 .timestamp {
     color: #7d7d7d;
+    position: absolute;
+    font-weight: bold;
+    margin: 15px 0px 0px -150px;
+}
+
+.timestamp a:hover {
+    text-decoration: none;
 }
 
 .blogtitle a {
