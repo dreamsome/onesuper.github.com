@@ -64,10 +64,8 @@ pre {
 }
 
 p img {
-    max-width: 480px;
-    padding: 5px;
-    border: 1px solid #ddd;
-    background: #fff;
+    max-width: 500px;
+ 
 }
 
 .titleline {
@@ -263,7 +261,7 @@ p {
 }
 
 .blogtitle a {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
     color:black;
 }
@@ -275,4 +273,9 @@ p {
 code {
     margin:0px;
     padding:0px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #999;
 }

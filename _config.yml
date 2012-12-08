@@ -1,4 +1,6 @@
 #auto: true
+title: I'm not Writin'
+subtitle: a poetry
 permalink: /:year/:month/:day/:title 
 pygments: false
 markdown: rdiscount
