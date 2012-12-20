@@ -8,8 +8,8 @@ tags: []
 
 人们总是在说：“线程越多越好”，“为了隐藏访存延时，让我们用更多的线程吧！”，真的是这样吗？
 
-
-Vasily Volkov 告诉我们即使在 Occupancy [1] 很低的情况下[也能够取得好性能](http://www.cs.berkeley.edu/~volkov/volkov10-GTC.pdf)。
+<span class="sidenote">* Occupancy = Active Warps / Max Active Warps</span>
+Vasily Volkov 告诉我们即使在 Occupancy \* 很低的情况下[也能够取得好性能](http://www.cs.berkeley.edu/~volkov/volkov10-GTC.pdf)。
 
 
 结论也许重要，但更重要的是 Vasily Volkov 得出这个结论的方法：从问题的本质出发，而不是现有结论，教科书上写的不一定比你的直觉更可靠。
@@ -30,12 +30,11 @@ Vasily Volkov 告诉我们即使在 Occupancy [1] 很低的情况下[也能够�
 增加**指令级并行性**同样能隐藏访存和计算延时。
 
 
-使用更少的线程有什么好处吗？在 GPU 中使用过更少的线程意味着可以用更多寄存器，寄存器的速度至少是 shared memory 的 6 倍，而不是像教科书上说的那样，在“某些条件下”两者一样快。[2]
+<span class="sidenote">* "In fact, for all threads of a warp, accessing the shared memory is as fast as accessing a register as long as there are no bank conflicts between the threads.." - CUDA Programming Guide</span>
+
+使用更少的线程有什么好处吗？在 GPU 中使用过更少的线程意味着可以用更多寄存器，寄存器的速度至少是 shared memory 的 6 倍，而不是像教科书上说的那样，在“某些条件下”两者一样快 \*。
 
 
 
-### Notes
 
 
-1. Occupancy = Active Warps / Max Active Warps
-2. "In fact, for all threads of a warp, accessing the shared memory is as fast as accessing a register as long as there are no bank conflicts between the threads.." - CUDA Programming Guide

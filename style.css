@@ -2,8 +2,8 @@ body {
     color: #555;
     margin: 0;
     font: normal 15px/1.75 "TIBch", "Grotesque MT W01", "Helvetica Neue", "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
-    border-top: 6px solid #000;
-    background: #F8F8F5;
+    //border-top: 6px solid #000;
+    //background: #F8F8F5;
 }
 
 .container {
@@ -250,13 +250,19 @@ p {
 
 
 .timestamp {
-    color: #7d7d7d;
+    color: #333;
     position: absolute;
-    font-weight: bold;
     margin: 15px 0px 0px -150px;
+    padding: 0 5px;
+    background: #F8F8F5;
+}
+
+.timestamp a {
+    color: #333;
 }
 
 .timestamp a:hover {
+    
     text-decoration: none;
 }
 
@@ -280,3 +286,13 @@ code {
     color: #999;
 }
 
+.sidenote {
+    display: block;
+    font-size: 12px;
+    background: #F8F8F5;
+    margin-right: -150px;
+    width: 150px;
+    left: 20px;
+    float: right;
+    position: relative;
+}
