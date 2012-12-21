@@ -18,7 +18,8 @@ On several months' reflection, I have got a couple of hints for those who want t
 ### GUI or CLI?
 
 
-When people create slideshows, actually they are imagining what they are going to present. A slideshow creation tool should not be a source-to-source\[1\] compiler which converts a text with some markups to a slideshow. It should be a tool to help people expressing.  
+<span class="sidenote">* Most applications behave like a markdown-to-html translator. </span>
+When people create slideshows, actually they are imagining what they are going to present. A slideshow creation tool should not be a source-to-source translator \* which converts a text with some markups to a slideshow. It should be a tool to help people expressing.  
 
 
 One way to practise the presentation is standing in front of a mirror and expressing yourself. Because you know where to improve only when you can see them. 
@@ -71,7 +72,5 @@ A highlight mode is just like a canvas floating over the slides. A user can inse
 I wrote this essay just to prove I was wrong. But what I said just now might also be wrong.
 
 
-### Notes
 
-1. Most applications behave like a markdown-to-html compiler. 
 
