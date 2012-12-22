@@ -311,6 +311,10 @@ code {
     text-decoration:none;
 }
 
+.category {
+    display: none;
+}
+
 .category ul {
     margin: 0px;
     padding: 0px;
