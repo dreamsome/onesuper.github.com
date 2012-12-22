@@ -4,5 +4,5 @@ subtitle: a poetry
 permalink: /:year/:month/:day/:title 
 pygments: false
 markdown: rdiscount
-paginate: 10
+#paginate: 10
 production_url : http://blog.chengyichao.info

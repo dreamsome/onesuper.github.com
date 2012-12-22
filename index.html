@@ -1,44 +1,11 @@
 ---
-layout: default
-title: {{ site.title }}
+layout: page
+title: Writings
 ---
 
 
-
-
-{% for post in paginator.posts %}
-<div class="postview">
-  <div class="timestamp"><a href="{{ post.url }}">{{ post.date | date_to_string }}</a></div>
-  <div class="title"><a href="{{ post.url }}">{{ post.title }}</a></div>
-   
-  {{post.content}}
-  
-</div>
-{% endfor %}
-
-
-  
-<div class="the-end-of-the-world">
-
-{% if 1 == paginator.page %}
-   <span class="current-page">1</span>
-{% else %}
-   <a href="/">1</a>
-{% endif %}
-
-
-{% for count in (2..paginator.total_pages) %}
-  {% if count == paginator.page %}
-    <span class="current-page">{{count}}</span>
-  {% else %}
-    <a href="/page{{count}}">{{count}}</a>
-  {% endif %}
-{% endfor %}
-
-
-</div>
+<p>往事不可忆，来着犹可追。文字是我来到过这个世界上最好的证明。</p>
 
 
 
-
-
+<p>{{site.posts[0].date | date_to_string}} - <a href="{{site.posts[0].url}}">{{ site.posts[0].title }}</a></p>

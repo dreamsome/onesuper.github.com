@@ -5,9 +5,8 @@ body {
 }
 
 .container {
-    width: 500px;
+    width: 550px;
     margin: 0px auto;
-    padding: 50px 70px;    
 
 }
 
@@ -55,14 +54,12 @@ pre {
     font-family: Menlo,Monaco,monospace;
     font-size: 14px;
     border: 0px;
-    background: #eee;
-    color: #555;
     padding: 0px;
-    border-radius: 3px;
+    margin: 20px;
 }
 
 p img {
-    max-width: 500px;
+    max-width: 550px;
  
 }
 
@@ -74,14 +71,15 @@ p img {
 
 
 blockquote {
-    margin: 20px;
+    margin: 20px 20px 20px 0px;
+    padding-left: 20px;
+    border-left: 10px solid E8E8F5;
 }
 
 .pagetitle h1{
     color: #333;
     font-weight: normal;
     font-size: 22px;
-    line-height: 60px;
     font-weight: bold;
 }
 
@@ -165,39 +163,31 @@ p {
 
 .footer{
     text-align:center;
-    height: 80px;
-
+    background: #F8F8EE;
+    padding: 2px 0;
 }
 
 
 .the-end-of-the-world {
-    margin-top: 40px;
-    text-align: center;
+    background: #F8F8EE;
+    padding: 2px 5px;
+    text-align: right;
+    color: #DDDDDD;
 }
 
 .the-end-of-the-world  a{
-    color: #aaa;
-    padding: 2px 5px;
-    border: 1px solid #E7E7E7;
-}
-
-.current-page {
-    padding: 2px 5px;
-    color: black;
-    border: 1px solid #E7E7E7;
+    color: #333;
+    text-decoration: underline;
+    padding: 2px 2px;
 }
 
 .the-end-of-the-world  a:hover{
-    text-decoration: none;
-    color: #fff;
-    background: black;
+    text-decoration: underline;
 }
 
 
-.content {
-    padding: 0px 20px 20px 20px;
-    margin: 40px -20px 20px -20px; 
-
+.content {   
+    margin: 40px 0;
 }
 
 
@@ -245,10 +235,13 @@ p {
 
 .timestamp {
     color: #333;
-    position: absolute;
-    margin: 15px 0px 0px -150px;
+    margin: 15px -150px 0px 0px;
     padding: 0 5px;
-    background: #F8F8F5;
+    background: #F8F8EE;
+    width: 150px;
+    left: 20px;
+    float: right;
+    position: relative;
 }
 
 .timestamp a {
@@ -283,10 +276,51 @@ code {
 .sidenote {
     display: block;
     font-size: 12px;
-    background: #F8F8F5;
+    background: #F8F8EE;
     margin-right: -150px;
     width: 150px;
     left: 20px;
     float: right;
     position: relative;
+}
+
+
+.tocview {
+    position:absolute;
+    margin-left: -273px;
+    padding: 2px;
+    width: 230px;
+
+}
+
+.tocview .toctitle {
+    line-height: 1.3;
+}
+
+.tocview .toctitle a {
+    font-family: serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    text-decoration:none;
+}
+
+
+.tocview .toctitle a:hover {
+    color: black;
+    text-decoration:none;
+}
+
+.category ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.category ul li {
+    font-size: 13px;
+    margin: 3px 0px;
+    line-height: 1.3;
+    padding: 0px;
+    list-style-type: none;
+
 }

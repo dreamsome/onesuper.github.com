@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ site.title }}</title>
-    <meta name="description" content="程亦超写东西的地方">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="Cheng Yichao's blog">
     <meta name="author" content="onesuper">
+    <script type="text/javascript" src="/sc.js"></script>
     <link href="/style.css" rel="stylesheet" type="text/css" media="all" />
     <link href="/atom.xml" rel="alternate" type="application/atom+xml" />  
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
@@ -12,32 +13,113 @@
 
 <body>    
 
-  <div class="meta">
-    <a href="/archive">
-      <img src="/images/star.png" />
-      <div class="show">No Direction Home</div>
-    </a>
-    <a href="/atom.xml">
-      <img src="/images/rss.png" />
-      <div class="show">Like A Rolling Stone</div>
-    </a>
-    <a href="mailto:onesuperclark@gmail.com">
-      <img src="/images/email.png" />
-      <div class="show">Knockin' on Heaven's Door</div>
-    </a>
-  </div>
-
 
   <div class="container">
-    <div class="titleline">
-	  <div class="blogtitle"><a href="/">{{ site.title}}</a></div>
+
+
+    <div class="tocview">
+
+      <div class="toctitle">
+        <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
+           onclick="TocviewToggle(this,&quot;tocview_3&quot;)" id="arrow3">&#9660;
+        </a> essay
+      </div>
+      <div id="tocview_3" class="category">
+        <ul>
+          {% for post in site.categories.essay %}
+          <li><a href="{{post.url}}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="toctitle">
+        <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
+           onclick="TocviewToggle(this,&quot;tocview_0&quot;)" id="arrow0">&#9660;
+        </a> life
+      </div>
+      <div id="tocview_0" class="category">
+        <ul>
+          {% for post in site.categories.life %}
+          <li><a href="{{post.url}}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+
+      <div class="toctitle">
+        <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
+           onclick="TocviewToggle(this,&quot;tocview_1&quot;)" id="arrow1">&#9660;
+        </a> art
+      </div>
+      <div id="tocview_1" class="category">
+        <ul>
+          {% for post in site.categories.art %}
+          <li><a href="{{post.url}}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+
+      <div class="toctitle">
+        <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
+           onclick="TocviewToggle(this,&quot;tocview_2&quot;)" id="arrow2">&#9660;
+        </a> tech
+      </div>
+      <div id="tocview_2" class="category">
+        <ul>
+          {% for post in site.categories.technium %}
+          <li><a href="{{post.url}}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+    </div>
+
+
+
+
+    <div class="the-end-of-the-world">
+       {% if page.previous %}
+        <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr;prev</a>
+      {% else %}
+        &larr;prev
+      {% endif %}
+
+        <a href="/" title="no direction home">home</a>
+        <a href="/onesuper" title="the man who sold the world">about</a>
+
+      {% if page.next %}
+        <a href="{{ page.next.url }}" title="{{ page.next.title }}">next&rarr;</a>
+      {% else %}
+        next&rarr;
+      {% endif %}
     </div>
 
     <div class="content">
       {{ content }}
     </div>
   
-    <div class="footer">Gently typed by <a href="/onesuper">onesuper</a></div>
+
+
+
+    <div class="the-end-of-the-world">
+       {% if page.previous %}
+        <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr;prev</a>
+      {% else %}
+        &larr;prev
+      {% endif %}
+
+      <a href="#">top</a>
+
+      {% if page.next %}
+        <a href="{{ page.next.url }}" title="{{ page.next.title }}">next&rarr;</a>
+      {% else %}
+        next&rarr;
+      {% endif %}
+    </div>
+
+
+
   </div>
 
 
