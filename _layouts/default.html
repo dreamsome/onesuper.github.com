@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <meta name="description" content="Cheng Yichao's blog">
-    <meta name="author" content="onesuper">
-    <script type="text/javascript" src="/sc.js"></script>
+    <meta name="author" content="Cheng Yichao">
+    <script type="text/javascript" src="/sc.js"></script>{% if page.latex %}
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>{% endif %}
     <link href="/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/code.css" rel="stylesheet" type="text/css" media="all" />
     <link href="/atom.xml" rel="alternate" type="application/atom+xml" />  
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 </head>
@@ -15,16 +17,80 @@
 
 
   <div class="container">
-
-
     <div class="tocview">
 
       <div class="toctitle">
         <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
-           onclick="TocviewToggle(this,&quot;tocview_3&quot;)" id="arrow3">&#9658;
-        </a> essay
+           onclick="TocviewToggle(this,&quot;tocview_reading&quot;)">&#9658;
+        </a> Burn After <span class="lighten">Reading</span>
       </div>
-      <div id="tocview_3" class="category">
+      <div id="tocview_reading" class="category">
+        <ul>
+          {% for post in site.categories.reading %}
+          <li><a href="{{post.url}}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="toctitle">
+        <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
+           onclick="TocviewToggle(this,&quot;tocview_tran&quot;)">&#9658;
+        </a> lost in <span class="lighten" >translation</span>
+      </div>
+      <div id="tocview_tran" class="category">
+        <ul>
+          {% for post in site.categories.translate %}
+          <li><a href="{{post.url}}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="toctitle">
+        <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
+           onclick="TocviewToggle(this,&quot;tocview_tech&quot;)">&#9658;
+        </a> Little <span class="lighten">Computer</span>
+      </div>
+      <div id="tocview_tech" class="category">
+        <ul>
+          {% for post in site.categories.technium %}
+          <li><a href="{{post.url}}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+
+      <div class="toctitle">
+        <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
+           onclick="TocviewToggle(this,&quot;tocview_idea&quot;)">&#9658;
+        </a> Wild <span class="lighten">Idea<span>
+      </div>
+      <div id="tocview_idea" class="category">
+        <ul>
+          {% for post in site.categories.idea %}
+          <li><a href="{{post.url}}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="toctitle">
+        <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
+           onclick="TocviewToggle(this,&quot;tocview_movie&quot;)">&#9658;
+        </a> A <span class="lighten">Movie</span>
+      </div>
+      <div id="tocview_movie" class="category">
+        <ul>
+          {% for post in site.categories.movie %}
+          <li><a href="{{post.url}}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="toctitle">
+        <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
+           onclick="TocviewToggle(this,&quot;tocview_essay&quot;)" id="arrow3">&#9658;
+        </a> <span class="lighten">Essay</span>
+      </div>
+      <div id="tocview_essay" class="category">
         <ul>
           {% for post in site.categories.essay %}
           <li><a href="{{post.url}}">{{ post.title }}</a></li>
@@ -34,10 +100,10 @@
 
       <div class="toctitle">
         <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
-           onclick="TocviewToggle(this,&quot;tocview_0&quot;)" id="arrow0">&#9658;
-        </a> life
+           onclick="TocviewToggle(this,&quot;tocview_life&quot;)">&#9658;
+        </a> <span class="lighten">Life</span>
       </div>
-      <div id="tocview_0" class="category">
+      <div id="tocview_life" class="category">
         <ul>
           {% for post in site.categories.life %}
           <li><a href="{{post.url}}">{{ post.title }}</a></li>
@@ -46,59 +112,28 @@
       </div>
 
 
-      <div class="toctitle">
-        <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
-           onclick="TocviewToggle(this,&quot;tocview_1&quot;)" id="arrow1">&#9658;
-        </a> art
-      </div>
-      <div id="tocview_1" class="category">
-        <ul>
-          {% for post in site.categories.art %}
-          <li><a href="{{post.url}}">{{ post.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-
-
-      <div class="toctitle">
-        <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
-           onclick="TocviewToggle(this,&quot;tocview_2&quot;)" id="arrow2">&#9658;
-        </a> tech
-      </div>
-      <div id="tocview_2" class="category">
-        <ul>
-          {% for post in site.categories.technium %}
-          <li><a href="{{post.url}}">{{ post.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-
     </div>
 
-
-
-
     <div class="the-end-of-the-world">
-       {% if page.previous %}
-        <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr;prev</a>
+      {% if page.previous %}
+      <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr;prev</a>
       {% else %}
-        &larr;prev
+      &larr;prev
       {% endif %}
 
-        <a href="/" title="no direction home">home</a>
-        <a href="/onesuper" title="the man who sold the world">about</a>
+      <a href="/" title="no direction home">home</a>
 
       {% if page.next %}
-        <a href="{{ page.next.url }}" title="{{ page.next.title }}">next&rarr;</a>
+      <a href="{{ page.next.url }}" title="{{ page.next.title }}">next&rarr;</a>
       {% else %}
-        next&rarr;
+      next&rarr;
       {% endif %}
     </div>
 
     <div class="content">
       {{ content }}
     </div>
-  
+    
 
 
 

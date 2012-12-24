@@ -3,6 +3,7 @@ layout: post
 title: "特征选择与卡方检验"
 category: technium
 tags: []
+latex: true
 ---
 
 

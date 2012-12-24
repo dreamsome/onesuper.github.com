@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "关于电视剧《神雕侠侣》主题曲"
+title: "《神雕侠侣》"
 category: life
 tags: []
 ---

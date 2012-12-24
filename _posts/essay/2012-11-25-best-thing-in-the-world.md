@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "最好的东西"
-category: essays
+category: essay
 tags: []
 ---
 

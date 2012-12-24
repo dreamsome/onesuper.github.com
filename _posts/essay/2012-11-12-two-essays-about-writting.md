@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "两篇关于写作的文章"
-category: essays
+category: essay
 tags: []
 ---
 

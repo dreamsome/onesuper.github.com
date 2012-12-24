@@ -73,21 +73,24 @@ Linux 系统调用和 DOS 系统调的过程差不了多少，比如我们要使
 
 最后来看一个完整的 Linux 汇编程序，它的功能是向标准输出流输出"hello,world"
 
-	SECTION .DATA
-		hello:     db 'Hello world!',10
-		helloLen:  equ $-hello
- 
-	 SECTION .TEXT
-		 GLOBAL _START
- 
-	 _START:
-		 ; 'Hello world!'
-		 mov eax,4                 ; 'write' 系统调用
-		 mov ebx,1                 ; 描述符1 = 屏幕
-		 mov ecx,hello             ; 要写的字符串
-		 mov edx,helloLen          ; 字符串长度
-		 int 80h                   ; 呼叫内核
-		 ; 退出
-		 mov eax,1                 ; 'exit'系统调用
-		 mov ebx,0                 ; 错误代码设为0
-		 int 80h                   ; 呼叫内核
+
+{% highlight nasm %}
+SECTION .DATA
+	hello:     db 'Hello world!',10
+	helloLen:  equ $-hello
+
+SECTION .TEXT
+	 GLOBAL _START
+
+ _START:
+	 ; 'Hello world!'
+	 mov eax,4                 ; 'write' 系统调用
+	 mov ebx,1                 ; 描述符1 = 屏幕
+	 mov ecx,hello             ; 要写的字符串
+	 mov edx,helloLen          ; 字符串长度
+	 int 80h                   ; 呼叫内核
+	 ; 退出
+	 mov eax,1                 ; 'exit'系统调用
+	 mov ebx,0                 ; 错误代码设为0
+	 int 80h                   ; 呼叫内核
+{% endhighlight %}
