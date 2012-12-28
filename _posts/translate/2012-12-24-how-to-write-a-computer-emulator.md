@@ -8,7 +8,7 @@ tags: []
 
 * 作者：Marat Fayzullin
 * 原文：[How To Write a Computer Emulator](http://fms.komkon.org/EMUL8/HOWTO.html)
-* 翻译：[AL](http://blog.chengyichao.info)
+* 翻译：[onesuper](http://blog.chengyichao.info)
 
 
 ---
@@ -120,10 +120,29 @@ C 和汇编是首选，它们各自的利弊如下：
 
 ### 上哪弄要仿真的硬件的信息？
 
+下面列出了一些你可能想要
 
-见原文。
+### 新闻组
 
-<div id="cpu"></div>
+* **comp.emulators.misc** <br> 这个新闻组专门用来讨论有关计算机仿真的问题，很多仿真器作者都读它，虽然它有点吵。发言前请先阅读它的 FAQ。
+* **comp.emulators.game-consoles** <br> 和 comp.emulators.misc 很像，但针对电子游戏设备的模拟，发言前阅读 comp.emulators.misc 的 FAQ。
+* **comp.sys./emulated-system/** <br> comp.sys.\* 下是特定型号的计算机，阅读这个新闻组，你可能会得到很多有用的技术信息。在这些讨论组发言之前请先阅读相关的 FAQ。
+* **alt.folklore.computers**
+* **rec.games.video.classic**
+
+
+#### FTP
+
+* [Console and Game Programming](ftp://x2ftp.oulu.fi/ )
+* [Arcade Videogame Hardware](ftp://ftp.spies.com/)
+* [Computer History and Emulation](ftp://ftp.komkon.org/pub/EMUL8/)
+
+
+#### WWW
+
+* [我的主页](http://www.komkon.org/fms/)
+* [Arcade Emulation Programming Repository](http://valhalla.ph.tn.tudelft.nl/emul8/arcade.html)
+* [Emulation Programmer's Resource ](http://www.classicgaming.com/EPR/)
 
 ### 如何仿真 CPU？
 
@@ -362,8 +381,33 @@ static inline void WriteMemory(register word Address,register byte Value)
 
 ### 如何优化 C 代码？
 
+首先使用正确的编译优化选项可以大大提高代码的性能，根据我的经验，下面这些标志组合的执行速度是最快的：
 
-（这部分没译。）
+
+    Watcom C++      -oneatx -zp4 -5r -fp3
+    GNU C++         -O3 -fomit-frame-pointer
+    Borland C++
+
+如果你找到了更好的设置方法，请让我知道。
+
+
+
+#### 循环展开的注释
+
+打开编译器的“循环展开”选项可能会起作用，这个选择试图把短的循环展开成线性的代码，但根据我的经验，这个选项的效果并没有传说中的那么好，在一些特殊情况下反而会降低代码的性能。
+
+
+
+优化 C 代码本身比设置选项要难一些，而且通常依赖于目标 CPU，下面几条规则适用于所有 CPU，但不要把它们视作绝对真理，因为你遇到的情况可能不同：
+
+
+* **使用性能分析工具!** <br> 用一个好的性能分析工具（我首先想到的就是 GPROF）来分析你的程序可能会带来意想不到的效果，你可能会找到那些运行频率最高、降低了整个程序速度的代码，优化这些代码或者用汇编语言重写会大大提升程度的性能。
+* **不要用 C++** <br> 不要使用 C++ 编译器支持而纯 C 编译器不支持的结构，因为 C++ 编译器生成的代码通常会有额外开销。
+* **整数大小** <br> 使用 CPU 提供的基本整数类型，比如 int 而不是 short 或 long，因为这样不但能减少编译器生成代码（用来转换整型长度）的数量，而且能减少访存次数，因为如果数据的大小和 CPU 读/写存储器数据的大小一致，就可以一次完成读写。
+* **寄存器分配** <br> 在每段代码中少用一些变量，并把使用频率最高的变量声明为寄存器变量（绝大多数新版编译器都会自动把变量放到寄存器中）。这对那些有很多通用寄存器（PowerPC）的 CPU 很有效，但对那些仅有少量寄存器的 CPU（Intel 80x86）就不一定了。
+* **展开小循环** <br> 如果代码中有一个小循环执行了很多次，最好把它手动展开，见“自动循环展开”的注释。
+* **移位代替乘除** <br> 当你需要乘或除 2 的 n 次方时使用移位操作（J/128==j>>7）。它们在绝大多数的 CPU 上都很快/另外，使用 AND 位操作来实现求模（J%128==J&0x7F）。
+
 
 
 ### 什么是字节序？
