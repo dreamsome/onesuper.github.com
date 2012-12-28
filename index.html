@@ -1,11 +1,36 @@
 ---
-layout: page
-title: Writings
+layout: default
 ---
 
 
-<p>往事不可忆，来着犹可追。文字是我来到过这个世界上最好的证明。</p>
+<div class="the-end-of-the-world">
+
+  <a href="{{ site.posts[1].url }}" title="{{ site.posts[1].title }}">&larr;prev</a>
+  <a href="/" title="no direction home">home</a>
+  next&rarr;
+
+</div>
 
 
 
-<p>{{site.posts[0].date | date_to_string}} - <a href="{{site.posts[0].url}}">{{ site.posts[0].title }}</a></p>
+
+<div class="row">
+    <div class="timestamp">{{ site.posts[0].date | date_to_string }}</div>
+
+    <div class="pagetitle"><h1>{{ site.posts[0].title }}</h1></div>
+    {{ site.posts[0].content }}
+
+
+</div>
+
+
+
+
+
+<div class="the-end-of-the-world">
+
+  <a href="{{ site.posts[1].url }}" title="{{ site.posts[1].title }}">&larr;prev</a>
+  <a href="#">top</a>
+  next&rarr;
+
+</div>

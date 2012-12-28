@@ -114,21 +114,7 @@
 
     </div>
 
-    <div class="the-end-of-the-world">
-      {% if page.previous %}
-      <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr;prev</a>
-      {% else %}
-      &larr;prev
-      {% endif %}
 
-      <a href="/" title="no direction home">home</a>
-
-      {% if page.next %}
-      <a href="{{ page.next.url }}" title="{{ page.next.title }}">next&rarr;</a>
-      {% else %}
-      next&rarr;
-      {% endif %}
-    </div>
 
     <div class="content">
       {{ content }}
@@ -137,21 +123,7 @@
 
 
 
-    <div class="the-end-of-the-world">
-       {% if page.previous %}
-        <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr;prev</a>
-      {% else %}
-        &larr;prev
-      {% endif %}
 
-      <a href="#">top</a>
-
-      {% if page.next %}
-        <a href="{{ page.next.url }}" title="{{ page.next.title }}">next&rarr;</a>
-      {% else %}
-        next&rarr;
-      {% endif %}
-    </div>
 
 
 
