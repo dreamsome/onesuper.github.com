@@ -5,157 +5,169 @@
     <title>{{ page.title }}</title>
     <meta name="description" content="Cheng Yichao's blog">
     <meta name="author" content="Cheng Yichao">
-    <script type="text/javascript" src="/sc.js"></script>{% if page.latex %}
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>{% endif %}
+    <script type="text/javascript" src="/sc.js"></script>
+{% if page.latex %}
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+        },
+      });
+    </script>
+{% endif %}
     <link href="/style.css" rel="stylesheet" type="text/css" media="all" />
     <link href="/code.css" rel="stylesheet" type="text/css" media="all" />
     <link href="/atom.xml" rel="alternate" type="application/atom+xml" />  
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-</head>
+ 
+  </head>
 
-<body>    
+  <body>    
 
 
-  <div class="container">
-    <div class="navi">
-      <ul>
-        <li><a href="http://chengyichao.info">Home</a></li>
-        <li><a href="http://chengyichao.info/project">Project</a></li>
-        <li><a href="/">Writing</a></li>
+    <div class="container">
+      <div class="navi">
+        <ul>
+          <li><a href="http://chengyichao.info">Home</a></li>
+          <li><a href="http://chengyichao.info/project">Project</a></li>
+          <li><a href="/">Blog</a></li>
 
-        <div class="tocview">
+          <div class="tocview">
 
-          <div class="toctitle">
-            <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
-               onclick="TocviewToggle(this,&quot;tocview_reading&quot;)">&#9658;
-            </a> <span class="lighten">Reading</span>
+            <div class="toctitle">
+              <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
+                 onclick="TocviewToggle(this,&quot;tocview_reading&quot;)">&#9658;
+              </a> <span class="lighten">Reading</span>
+            </div>
+            <div id="tocview_reading" class="category">
+              <ul>
+                {% for post in site.categories.reading %}
+                <li><a href="{{post.url}}">{{ post.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+
+            <div class="toctitle">
+              <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
+                 onclick="TocviewToggle(this,&quot;tocview_tran&quot;)">&#9658;
+              </a> <span class="lighten" >Translation</span>
+            </div>
+            <div id="tocview_tran" class="category">
+              <ul>
+                {% for post in site.categories.translate %}
+                <li><a href="{{post.url}}">{{ post.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+
+            <div class="toctitle">
+              <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
+                 onclick="TocviewToggle(this,&quot;tocview_tech&quot;)">&#9658;
+              </a> <span class="lighten">Computer</span>
+            </div>
+            <div id="tocview_tech" class="category">
+              <ul>
+                {% for post in site.categories.technium %}
+                <li><a href="{{post.url}}">{{ post.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+
+
+            <div class="toctitle">
+              <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
+                 onclick="TocviewToggle(this,&quot;tocview_idea&quot;)">&#9658;
+              </a> <span class="lighten">Idea<span>
+            </div>
+            <div id="tocview_idea" class="category">
+              <ul>
+                {% for post in site.categories.idea %}
+                <li><a href="{{post.url}}">{{ post.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+
+            <div class="toctitle">
+              <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
+                 onclick="TocviewToggle(this,&quot;tocview_movie&quot;)">&#9658;
+              </a> <span class="lighten">Movie</span>
+            </div>
+            <div id="tocview_movie" class="category">
+              <ul>
+                {% for post in site.categories.movie %}
+                <li><a href="{{post.url}}">{{ post.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+
+            <div class="toctitle">
+              <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
+                 onclick="TocviewToggle(this,&quot;tocview_essay&quot;)" id="arrow3">&#9658;
+              </a> <span class="lighten">Essay</span>
+            </div>
+            <div id="tocview_essay" class="category">
+              <ul>
+                {% for post in site.categories.essay %}
+                <li><a href="{{post.url}}">{{ post.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+
+            <div class="toctitle">
+              <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
+                 onclick="TocviewToggle(this,&quot;tocview_life&quot;)">&#9658;
+              </a> <span class="lighten">Life</span>
+            </div>
+            <div id="tocview_life" class="category">
+              <ul>
+                {% for post in site.categories.life %}
+                <li><a href="{{post.url}}">{{ post.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+
+
           </div>
-          <div id="tocview_reading" class="category">
-            <ul>
-              {% for post in site.categories.reading %}
-              <li><a href="{{post.url}}">{{ post.title }}</a></li>
-              {% endfor %}
-            </ul>
-          </div>
 
-          <div class="toctitle">
-            <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
-               onclick="TocviewToggle(this,&quot;tocview_tran&quot;)">&#9658;
-            </a> <span class="lighten" >Translation</span>
-          </div>
-          <div id="tocview_tran" class="category">
-            <ul>
-              {% for post in site.categories.translate %}
-              <li><a href="{{post.url}}">{{ post.title }}</a></li>
-              {% endfor %}
-            </ul>
-          </div>
-
-          <div class="toctitle">
-            <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
-               onclick="TocviewToggle(this,&quot;tocview_tech&quot;)">&#9658;
-            </a> <span class="lighten">Computer</span>
-          </div>
-          <div id="tocview_tech" class="category">
-            <ul>
-              {% for post in site.categories.technium %}
-              <li><a href="{{post.url}}">{{ post.title }}</a></li>
-              {% endfor %}
-            </ul>
-          </div>
+          <li><a href="http://chengyichao.info/gallery">Gallery</a></li>
+          <li><a href="http://chengyichao.info/contact">Contact</a></li>
+        </ul>
 
 
-          <div class="toctitle">
-            <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
-               onclick="TocviewToggle(this,&quot;tocview_idea&quot;)">&#9658;
-            </a> <span class="lighten">Idea<span>
-          </div>
-          <div id="tocview_idea" class="category">
-            <ul>
-              {% for post in site.categories.idea %}
-              <li><a href="{{post.url}}">{{ post.title }}</a></li>
-              {% endfor %}
-            </ul>
-          </div>
 
-          <div class="toctitle">
-            <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
-               onclick="TocviewToggle(this,&quot;tocview_movie&quot;)">&#9658;
-            </a> <span class="lighten">Movie</span>
-          </div>
-          <div id="tocview_movie" class="category">
-            <ul>
-              {% for post in site.categories.movie %}
-              <li><a href="{{post.url}}">{{ post.title }}</a></li>
-              {% endfor %}
-            </ul>
-          </div>
-
-          <div class="toctitle">
-            <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
-               onclick="TocviewToggle(this,&quot;tocview_essay&quot;)" id="arrow3">&#9658;
-            </a> <span class="lighten">Essay</span>
-          </div>
-          <div id="tocview_essay" class="category">
-            <ul>
-              {% for post in site.categories.essay %}
-              <li><a href="{{post.url}}">{{ post.title }}</a></li>
-              {% endfor %}
-            </ul>
-          </div>
-
-          <div class="toctitle">
-            <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
-               onclick="TocviewToggle(this,&quot;tocview_life&quot;)">&#9658;
-            </a> <span class="lighten">Life</span>
-          </div>
-          <div id="tocview_life" class="category">
-            <ul>
-              {% for post in site.categories.life %}
-              <li><a href="{{post.url}}">{{ post.title }}</a></li>
-              {% endfor %}
-            </ul>
-          </div>
+      </div>
 
 
-        </div>
+      <div class="content">
+        {{ content }}
+      </div>
+      
 
-        <li><a href="http://chengyichao.info/gallary">Gallary</a></li>
-        <li><a href="http://chengyichao.info/contact">Contact</a></li>
-      </ul>
+
+
+
 
 
 
     </div>
 
 
-    <div class="content">
-      {{ content }}
-    </div>
     
 
 
-
-
-
-
-
-  </div>
-
-
-  
-
-
-  <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-30275856-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-</body>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30275856-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
 </html>

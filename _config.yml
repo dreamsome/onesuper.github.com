@@ -2,4 +2,6 @@ title: I'm not Writin'
 permalink: /:year/:month/:day/:title 
 pygments: true
 markdown: rdiscount
+rdiscount:
+  extensions: [strict]
 production_url : http://blog.chengyichao.info
