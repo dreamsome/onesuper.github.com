@@ -3,25 +3,21 @@ layout: default
 title: Blog
 ---
 
-
 <div class="the-end-of-the-world">
-
-  <a href="{{ site.posts[1].url }}" title="{{ site.posts[1].title }}">&larr;prev</a>
-  <a href="/">cover</a>
-  next&rarr;
-
+  index
 </div>
 
 
 
 
 <div class="row">
-    <div class="timestamp">{{ site.posts[0].date | date_to_string }}</div>
+<ul>
+{% for post in site.posts %}
 
-    <div class="pagetitle"><h1>{{ site.posts[0].title }}</h1></div>
-    {{ site.posts[0].content }}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
 
-
+{% endfor %}
+</ul>
 </div>
 
 
@@ -29,9 +25,5 @@ title: Blog
 
 
 <div class="the-end-of-the-world">
-
-  <a href="{{ site.posts[1].url }}" title="{{ site.posts[1].title }}">&larr;prev</a>
-  <a href="#">top</a>
-  next&rarr;
-
+write gently
 </div>

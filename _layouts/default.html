@@ -34,111 +34,11 @@
         <ul>
           <li><a href="http://chengyichao.info">Home</a></li>
           <li><a href="http://chengyichao.info/project">Project</a></li>
-          <li><a href="/">Blog</a></li>
-
-          <div class="tocview">
-
-            <div class="toctitle">
-              <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
-                 onclick="TocviewToggle(this,&quot;tocview_reading&quot;)">&#9658;
-              </a> <span class="lighten">Reading</span>
-            </div>
-            <div id="tocview_reading" class="category">
-              <ul>
-                {% for post in site.categories.reading %}
-                <li><a href="{{post.url}}">{{ post.title }}</a></li>
-                {% endfor %}
-              </ul>
-            </div>
-
-            <div class="toctitle">
-              <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
-                 onclick="TocviewToggle(this,&quot;tocview_tran&quot;)">&#9658;
-              </a> <span class="lighten" >Translation</span>
-            </div>
-            <div id="tocview_tran" class="category">
-              <ul>
-                {% for post in site.categories.translate %}
-                <li><a href="{{post.url}}">{{ post.title }}</a></li>
-                {% endfor %}
-              </ul>
-            </div>
-
-            <div class="toctitle">
-              <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
-                 onclick="TocviewToggle(this,&quot;tocview_tech&quot;)">&#9658;
-              </a> <span class="lighten">Computer</span>
-            </div>
-            <div id="tocview_tech" class="category">
-              <ul>
-                {% for post in site.categories.technium %}
-                <li><a href="{{post.url}}">{{ post.title }}</a></li>
-                {% endfor %}
-              </ul>
-            </div>
-
-
-            <div class="toctitle">
-              <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
-                 onclick="TocviewToggle(this,&quot;tocview_idea&quot;)">&#9658;
-              </a> <span class="lighten">Idea<span>
-            </div>
-            <div id="tocview_idea" class="category">
-              <ul>
-                {% for post in site.categories.idea %}
-                <li><a href="{{post.url}}">{{ post.title }}</a></li>
-                {% endfor %}
-              </ul>
-            </div>
-
-            <div class="toctitle">
-              <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
-                 onclick="TocviewToggle(this,&quot;tocview_movie&quot;)">&#9658;
-              </a> <span class="lighten">Movie</span>
-            </div>
-            <div id="tocview_movie" class="category">
-              <ul>
-                {% for post in site.categories.movie %}
-                <li><a href="{{post.url}}">{{ post.title }}</a></li>
-                {% endfor %}
-              </ul>
-            </div>
-
-            <div class="toctitle">
-              <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
-                 onclick="TocviewToggle(this,&quot;tocview_essay&quot;)" id="arrow3">&#9658;
-              </a> <span class="lighten">Essay</span>
-            </div>
-            <div id="tocview_essay" class="category">
-              <ul>
-                {% for post in site.categories.essay %}
-                <li><a href="{{post.url}}">{{ post.title }}</a></li>
-                {% endfor %}
-              </ul>
-            </div>
-
-            <div class="toctitle">
-              <a href="javascript:void(0);" title="Expand/Collapse" class="toc" 
-                 onclick="TocviewToggle(this,&quot;tocview_life&quot;)">&#9658;
-              </a> <span class="lighten">Life</span>
-            </div>
-            <div id="tocview_life" class="category">
-              <ul>
-                {% for post in site.categories.life %}
-                <li><a href="{{post.url}}">{{ post.title }}</a></li>
-                {% endfor %}
-              </ul>
-            </div>
-
-
-          </div>
-
           <li><a href="http://chengyichao.info/gallery">Gallery</a></li>
           <li><a href="http://chengyichao.info/contact">Contact</a></li>
+          <li><a href="/">Blog</a></li>
+          
         </ul>
-
-
-
       </div>
 
 

@@ -34,8 +34,8 @@ h4 {
 
 .navi {
     font-size: 15px;
-    margin-left: -280px;
-    width: 250px;
+    margin-left: -220px;
+    width: 180px;
     position: absolute;
     top: 40px;
 }
@@ -178,7 +178,7 @@ p {
     background: #F8F8EE;
     padding: 2px 5px;
     text-align: right;
-    color: #DDDDDD;
+    color: #AAAAAA;
 }
 
 .the-end-of-the-world  a{
@@ -292,11 +292,7 @@ code {
 
 
 .tocview {
-    
     padding: 2px;
-    //width: 250px;
-    margin-left: 10px;
-
 }
 
 .tocview .toctitle {

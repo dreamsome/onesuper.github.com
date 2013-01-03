@@ -48,8 +48,8 @@
 .w { color: #f8f8f8; text-decoration: underline } /* Text.Whitespace */
 .mf { color: #0000cf; font-weight: bold } /* Literal.Number.Float */
 .mh { color: #0000cf; font-weight: bold } /* Literal.Number.Hex */
-.mi { color: #0000cf; font-weight: bold } /* Literal.Number.Integer */
-.mo { color: #0000cf; font-weight: bold } /* Literal.Number.Oct */
+/* .mi { color: #0000cf; font-weight: bold }  Literal.Number.Integer */
+/* .mo { color: #0000cf; font-weight: bold }  Literal.Number.Oct */
 .sb { color: #4e9a06 } /* Literal.String.Backtick */
 .sc { color: #4e9a06 } /* Literal.String.Char */
 .sd { color: #8f5902; font-style: italic } /* Literal.String.Doc */
