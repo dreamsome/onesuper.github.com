@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "怎样编写计算机仿真器"
 
 ---
