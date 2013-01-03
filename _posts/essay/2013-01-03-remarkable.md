@@ -4,7 +4,6 @@ title: "Remarkable"
 category: essay
 tags: []
 ---
-{% include JB/setup %}
 
 
 mark 这个单词的意思是“做记号”，加上 re 前缀就表示“再做一次记号”，重要程度顿时上升了，提醒你一定得注意了。remark 后面加 able，就表示一样东西“值得注意”，进一步，也就是“非凡”、“卓越”的意思。
