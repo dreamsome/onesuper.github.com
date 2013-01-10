@@ -1,27 +1,40 @@
 ---
 layout: default
-title: Blog
+title: Random Thoughts from Chaos
 ---
 
 
 
 
-
-<div class="row">
-
-<h2>Index</h2>
-
-
-<ul>
-{% for post in site.posts %}
-
-  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-
+{% for post in paginator.posts %}
+<div class="postview">
+  
+  <div class="entry_title"><h2><a href="{{ post.url }}">{{ post.title }}</a></h2></div>
+  <div class="timestamp">{{ post.date | date_to_string }}</div>   
+  {{post.content}}
+  
+</div>
 {% endfor %}
+
+<div class="pagenav">
+<ul>
+
+<li style="text-align:left;">  
+{% if paginator.previous_page %}
+  {% if paginator.previous_page == 1 %}
+    <a href="/">Newer Posts</a>
+  {% else %}
+  <a href="/page{{paginator.previous_page}}">Newer Posts</a>
+  {% endif %}
+{% endif %}
+</li>
+
+
+<li style="text-align:right;">
+{% if paginator.next_page %}
+<a href="/page{{paginator.next_page}}" >Older Posts</a>
+{% endif %}
+</li>
 </ul>
 </div>
-
-
-
-
 

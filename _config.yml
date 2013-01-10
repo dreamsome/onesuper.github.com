@@ -1,5 +1,6 @@
 title: I'm not Writin'
 permalink: /:year/:month/:day/:title 
+paginate: 5
 pygments: true
 markdown: rdiscount
 rdiscount:

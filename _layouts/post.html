@@ -2,48 +2,50 @@
 layout: default
 ---
 
-<div class="the-end-of-the-world">
-  {% if page.previous %}
-  <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr;prev</a>
-  {% else %}
-  &larr;prev
-  {% endif %}
 
-  <a href="/">cover</a>
-
-  {% if page.next %}
-  <a href="{{ page.next.url }}" title="{{ page.next.title }}">next&rarr;</a>
-  {% else %}
-  next&rarr;
-  {% endif %}
-</div>
 
 
 <div class="row">
-    <div class="timestamp">{{ page.date | date_to_string }}</div>
 
     <div class="pagetitle"><h1>{{ page.title }}</h1></div>
+    <div class="timestamp">{{ page.date | date_to_string }}</div>
     {{ content }}
 
 
+
+    <div class="pagenav"><ul>
+<li style="text-align: left;">
+      {% if page.previous %}
+      <a href="{{ page.previous.url }}" style="float:left;">{{ page.previous.title }}</a>
+      {% else %}
+      {% endif %}
+</li>
+
+<li style="text-align: right;">
+      {% if page.next %}
+      <a href="{{ page.next.url }}" style="float: right;">{{ page.next.title }}</a>
+      {% else %}
+   
+      {% endif %}
+</li>
+    </ul></div>
+
+
 </div>
 
 
 
 
 
-<div class="the-end-of-the-world">
-  {% if page.previous %}
-  <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr;prev</a>
-  {% else %}
-  &larr;prev
-  {% endif %}
 
-  <a href="#">top</a>
 
-  {% if page.next %}
-  <a href="{{ page.next.url }}" title="{{ page.next.title }}">next&rarr;</a>
-  {% else %}
-  next&rarr;
-  {% endif %}
-</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'across-the-universe';
+  (function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
