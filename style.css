@@ -4,33 +4,14 @@ body {
     font: normal 15px/1.75 "TIBch", "Grotesque MT W01", "Helvetica Neue", "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
 }
 
-.container {
-    width: 550px;
-    margin: 0px auto;
 
-}
+a {color: #9F9F9F;text-decoration: none;}
+a:hover {text-decoration: underline;}
+h3 {font-size: 18px;font-weight: bold;color: #333;}
+h4 {font-size: 16px;color: #333;margin: 10px 0;}
 
-
-a {
-    color: #9F9F9F;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-h3 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-}
-
-h4 {
-    font-size: 16px;
-    color: #333;
-    margin: 10px 0;
-}
+p {margin: 0 0 20px;}
+ul {list-style-type: square;}
 
 .navi {
     font-size: 15px;
@@ -39,6 +20,9 @@ h4 {
     position: absolute;
     top: 40px;
 }
+
+
+.container {width: 550px;margin: 0px auto;}
 
 .navi a {
     color: #999;
@@ -67,14 +51,7 @@ pre {
 
 p img {
     max-width: 550px;
- 
 }
-
-.titleline {
-}
-
-
-
 
 
 blockquote {
@@ -107,7 +84,6 @@ blockquote {
     font-weight: bold;
     font-size: 20px;
     line-height: 60px;
-    font-family: "Grotesque MT W01 Bold", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", "Microsoft YaHei", SimSun, sans-serif;
     padding-bottom: 2px;
 }
 
@@ -125,9 +101,7 @@ blockquote {
     padding-bottom: 20px;
 }
 
-p {
-    margin: 0 0 20px;
-}
+
 
 .allposts {
     width: 100%;
@@ -344,3 +318,4 @@ hr {
 .ss-controls {float: left;}
 
 .slideshow{ text-align:center; margin: 20px 0px;}
+
