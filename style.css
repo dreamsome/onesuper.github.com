@@ -1,5 +1,7 @@
+* {margin:0px; padding:0px;}
+
 body {
-    color: #555;
+    color: #444;
     line-height: 180%;
     background: #333;
     margin: 0;
@@ -7,12 +9,14 @@ body {
 }
 
 h1,h2,h3,h4 {
+    margin: 20px 0;
     font-family: Sylfaen, Georgia, "Times New Roman", Times, serif;
 }
 h1,h2 {font-weight: normal;}
-h3 {font-size: 17px;color: #333;}
-h4 {font-size: 15px;color: #333;}
+h3 {font-size: 18px;color: #333;}
+h4 {font-size: 16px;color: #333;}
 
+ul, ol{padding-left: 25px;}
 
 #header {
     height: 225px;
@@ -90,19 +94,29 @@ pre {
     font-family: Menlo,Monaco,monospace;
     font-size: 13px;
     border: 0px;
-    padding: 0px;
+    padding: 3px;
     margin: 20px;
-    background: #F8F9F1;
+    background: #fff;
+    -moz-box-shadow:2px 2px 8px #888;
+    -webkit-box-shadow:2px 2px 8px #888;
+    box-shadow:2px 2px 8px #888;
 }
 
 p img {
-    max-width: 550px;
+    max-width: 510px;
+    -moz-box-shadow:0px 0px 15px #999;
+    -webkit-box-shadow:0px 0px 15px #999;
+    box-shadow:0px 0px 15px #999;
 }
 
 
 blockquote {
     margin: 20px 20px 20px 20px;
-    background: #F8F9F1;
+    background: #FAEBBC;
+    color: #333;
+    padding: 10px;
+    border-top: 1px solid #E1CC89;
+    border-bottom: 1px solid #E1CC89;
 }
 
 .pagetitle h1{
@@ -190,6 +204,7 @@ code {
     float: right;
     padding: 5px;
     position: relative;
+    border: 1px solid #AAA;
 }
 
 
