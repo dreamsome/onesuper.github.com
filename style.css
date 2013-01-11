@@ -16,7 +16,7 @@ h1,h2 {font-weight: normal;}
 h3 {font-size: 18px;color: #333;}
 h4 {font-size: 16px;color: #333;}
 
-ul, ol{padding-left: 25px;}
+ul, ol{padding-left: 25px;margin-bottom: 20px;}
 
 #header {
     height: 225px;
