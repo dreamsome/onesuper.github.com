@@ -78,7 +78,7 @@ ul, ol{padding-left: 25px;margin-bottom: 20px;}
     border-left: 7px solid #eee;
     border-right: 7px solid #eee;
 }
-.content {margin: 0 5px;}
+.content {margin: 0 12px;}
 
 a {color: #579; text-decoration: none;}
 
@@ -100,6 +100,7 @@ pre {
     -moz-box-shadow:2px 2px 8px #888;
     -webkit-box-shadow:2px 2px 8px #888;
     box-shadow:2px 2px 8px #888;
+    word-wrap: break-word;
 }
 
 p img {
@@ -127,7 +128,6 @@ blockquote {
 }
 
 .postview {
-    padding: 5px 10px;
     margin: 40px 0;
 }
 .entry_title h2 {
@@ -146,7 +146,6 @@ blockquote {
     text-decoration: none;
     color: #C8A799;
 }
-
 
 
 #footer{
