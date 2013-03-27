@@ -123,7 +123,7 @@ AsmFile.exe 每次调用 add、sub、jump 这样的函数时都会将inst_loc �
 汇编语言中有一种叫伪指令（pseudo instruction）的东西，它用来扩展现有机器的指令集。比如某些机器（如 MIPS）本身并不提供 move （寄存器移动）指令，当程序员需要实现寄存器拷贝的功能时往往需要用一条 add 指令来代替：
 
 
-add $t0, $zero, $t1 
+    add $t0, $zero, $t1 
 
 
 

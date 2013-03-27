@@ -1,6 +1,6 @@
-title: Cheng Yichao's Weblog
+title: Neverland
 permalink: /:year/:month/:day/:title 
-paginate: 5
+paginate: 10
 pygments: true
 markdown: rdiscount
 rdiscount:
