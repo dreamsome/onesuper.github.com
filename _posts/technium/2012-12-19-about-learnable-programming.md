@@ -75,7 +75,7 @@ Polya 在《怎样解题》指出，好的老师应该对学生循循善诱，�
 假设我们要可视化一棵树，可以画成这样：
 
 
-![](/images/tree.png)
+![](http://ww3.sinaimg.cn/mw690/9c9ad557jw1e3ekazf7sfj.jpg)
 
 
 但其实我们只要这样：
