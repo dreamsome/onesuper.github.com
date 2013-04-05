@@ -2,7 +2,7 @@
 layout: post
 title: "My Love Is Pure"
 category: essay
-tags: [love]
+tags: [prose]
 
 ---
 

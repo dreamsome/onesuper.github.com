@@ -2,6 +2,7 @@
 layout: post
 title: "Programmer and Creator"
 category: essay
+tags: [hacker, tech]
 ---
 
 刚刚花了半个小时回复一篇[文章](http://www.douban.com/note/234831096/)，现在发现思考的过程足够自己写一篇了，所幸再写点。

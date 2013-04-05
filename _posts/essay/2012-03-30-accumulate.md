@@ -2,7 +2,7 @@
 layout: post
 title: "从每一件小事开始积累"
 category: essay
-tags: [career, life]
+tags: [career]
 
 ---
 

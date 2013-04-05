@@ -2,6 +2,8 @@
 layout: post
 title: "是什么让我在炎炎夏日感到不寒而栗"
 category: essay
+tags: [reading]
+
 ---
 
 《禅与摩托车维修艺术》中的一段话：

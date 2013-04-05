@@ -2,7 +2,7 @@
 layout: post
 title: "我爱喝水"
 category: essay
-tags: [water]
+tags: [prose]
 ---
 
 

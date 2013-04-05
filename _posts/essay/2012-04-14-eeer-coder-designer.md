@@ -2,7 +2,7 @@
 layout: post
 title: "不想当程序员的 EEer 不是好设计师"
 category: essay
-tags: [people]
+tags: [career]
 
 ---
 

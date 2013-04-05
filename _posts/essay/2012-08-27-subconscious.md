@@ -2,6 +2,7 @@
 layout: post
 title: "潜意识"
 category: essay
+tags: [thinking]
 ---
 
 最深层的情感始终以潜意识的形式存在于我们的心中，无论快乐或者痛苦。

@@ -2,7 +2,7 @@
 layout: post
 title: "Word is Cheap"
 category: essay
-tags: []
+tags: [word]
 ---
 
 

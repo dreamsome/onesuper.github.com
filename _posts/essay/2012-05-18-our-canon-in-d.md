@@ -2,7 +2,7 @@
 layout: post
 title: "Our Canon in D"
 category: essay
-tags: [melody]
+tags: [music]
 
 ---
 

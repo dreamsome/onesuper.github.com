@@ -2,7 +2,7 @@
 layout: post
 title: "关于版权、开源与网络翻译"
 category: essay
-tags: []
+tags: [translation, open source]
 ---
 
 

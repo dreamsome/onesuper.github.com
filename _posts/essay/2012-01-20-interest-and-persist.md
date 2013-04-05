@@ -2,7 +2,7 @@
 layout: post
 title: "兴趣比坚持更重要"
 category: essay
-tag: [interest]
+tag: [thinking]
 ---
 兴趣往往是干一件事情最好的源动力，如果没有兴趣，而单纯地为了利益做某件事，多半难以坚持到底。
 

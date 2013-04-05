@@ -2,7 +2,7 @@
 layout: post
 title: "这就是足球"
 category: essay
-tags: [football]
+tags: [soccer]
 
 ---
 

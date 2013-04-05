@@ -1,7 +1,6 @@
 title: Neverland
 desc: Random thoughts from chaos
 permalink: /:year/:month/:day/:title 
-paginate: 10
 pygments: true
 markdown: rdiscount
 rdiscount:

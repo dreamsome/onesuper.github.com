@@ -2,7 +2,7 @@
 layout: post
 title: "Remarkable"
 category: essay
-tags: []
+tags: [thinking]
 ---
 
 

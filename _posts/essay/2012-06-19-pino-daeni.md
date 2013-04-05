@@ -2,8 +2,9 @@
 layout: post
 title: "画中的少女"
 category: essay
-tags: [painting]
+tags: [arts]
 ---
+
 
 ![beachside](http://ww1.sinaimg.cn/mw690/534218fftw1du37yv9fiej.jpg)
 

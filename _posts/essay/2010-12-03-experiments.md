@@ -2,7 +2,7 @@
 layout: post
 title: "我做实验的故事"
 category: essay
-tags: [experiment]
+tags: [learning]
 ---
 
 

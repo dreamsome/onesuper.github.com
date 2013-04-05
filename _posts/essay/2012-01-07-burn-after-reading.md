@@ -2,7 +2,7 @@
 layout: post
 title: "阅后即焚"
 category: essay
-tags: [longly]
+tags: [thinking]
 
 ---
 

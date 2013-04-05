@@ -2,7 +2,7 @@
 layout: post
 title: "最好的东西"
 category: essay
-tags: []
+tags: [thinking]
 ---
 
 
