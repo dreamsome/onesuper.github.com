@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "美罗城星巴克留给我的回忆"
+title: "美罗城星巴克"
 category:  life
 tags: [Starbucks]
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "是什么让我在炎炎夏日感到不寒而栗"
+title: "知识的疏离感"
 category: essay
 tags: [reading]
 

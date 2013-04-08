@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Our Canon in D"
+title: "D 大调卡农"
 category: essay
 tags: [music]
 

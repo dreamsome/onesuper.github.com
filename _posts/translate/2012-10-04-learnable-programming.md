@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "翻译练习：Learnable Programming"
+title: "Learnable Programming"
 category: translate
 ---
 

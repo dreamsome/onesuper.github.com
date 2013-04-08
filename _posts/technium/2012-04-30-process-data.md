@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "为什么不这样处理数据？"
+title: "为什么不这样处理数据"
 category: technium
 tags: [data]
 

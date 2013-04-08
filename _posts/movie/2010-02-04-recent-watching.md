@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "最近的观影记录"
+title: "最近观影记录"
 category: movie
 tags: [movie]
 ---

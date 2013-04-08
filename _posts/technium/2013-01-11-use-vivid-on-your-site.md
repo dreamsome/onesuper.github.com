@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "在你的网站中使用 Vivid Schemer"
+title: "The Vivid Schemer"
 category: technium
 tags: []
 ---
 
 
-现在你可以在网页中嵌入 Vivid Schemer 了，像这样：
+现在你可以在网页中嵌入 Vivid Schemer 了，like this：
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "我做实验的故事"
+title: "做实验"
 category: essay
 tags: [learning]
 ---

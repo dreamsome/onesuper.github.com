@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "正确理解泊松分布"
+title: "泊松分布"
 category: technium
 tags: [poisson]
 latex: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "当人们谈 C 语言时，他们谈些什么"
+title: "当人们谈 C 语言时，他们谈什么"
 category: technium
 tags: [C, Lisp]
 ---

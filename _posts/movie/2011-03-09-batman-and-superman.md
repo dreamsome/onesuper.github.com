@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "为什么你应该喜欢蝙蝠侠而不是超人"
+title: "蝙蝠侠"
 category: movie
 ---
 

@@ -39,7 +39,7 @@ Twitter 是 2006 年左右出现的，而 1996 年的时候我们就有了 Googl
 另一个需求驱动技术的例子就是 iPhone 的多点触控，谁让我们天生长了多根手指呢？
 
 
-![](http://ww1.sinaimg.cn/mw690/9c9ad557jw1e3ek9jeu3ej.jpg)
+
 
 
 

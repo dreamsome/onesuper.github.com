@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "pretty 作副词时的用法"
+title: "pretty 作副词"
 category: translate
 tags: [translate]
 

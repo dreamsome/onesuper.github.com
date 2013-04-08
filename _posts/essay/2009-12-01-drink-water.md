@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "我爱喝水"
+title: "喝水"
 category: essay
 tags: [prose]
 ---

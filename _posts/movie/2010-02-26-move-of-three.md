@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "三个人的电影，我却不能有姓名"
+title: "三个人的电影"
 category: movie
 tags: [movie]
 ---

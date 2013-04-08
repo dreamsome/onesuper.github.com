@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "关于“原语”定义的思考"
+title: "什么是“原语”"
 category: technium
 tags: []
 ---
