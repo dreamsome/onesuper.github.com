@@ -28,7 +28,7 @@ Quora 上的一个问题：[What if there were a war of programming languages wh
 ![](http://ww4.sinaimg.cn/large/a74eed94jw1e3n8dojvtij.jpg)
 
 
-所有人都以为他是好人，都相信他是正义的一方，但一旦你了解了它，就会意识到它想要的是权力，而不是善，他内心有丑恶的一面！
+所有人都以为他是好人，都相信他是正义的一方，但一旦你了解了他，就会意识到他想要的是权力，而不是善，他内心有丑恶的一面！
 
 
 **Java：甘道夫**
@@ -36,7 +36,7 @@ Quora 上的一个问题：[What if there were a war of programming languages wh
 ![](http://ww4.sinaimg.cn/large/a74e55b4jw1e3n8dx1gltj.jpg)
 
 
-他希望和平。他与所有人合作，把自己的 JVM 分享给其他所有语言，他周游各平台，与他们交流。Java 是胸中无恶的 C++。 
+他希望和平。他与所有人合作，拿自己的 JVM 和其他所有语言分享，他周游各平台，与他们交流。Java 是胸中无恶的 C++。 
 
 
 **Python：树人**
@@ -44,7 +44,7 @@ Quora 上的一个问题：[What if there were a war of programming languages wh
 ![](http://ww1.sinaimg.cn/large/bfadf3bejw1e3n8e4sw4qj.jpg)
 
 
-很冷静，从不打扰任何人，在霍比人的本科生课程中帮助他们理解计算机概念，也在巫师的研究生课上帮过他们。
+很冷静，从不打扰别人，在霍比人的本科生课程中帮助他们理解计算机概念，也在巫师的研究生课上帮过他们。
 
 
 **Ruby：人类**
@@ -59,6 +59,7 @@ Quora 上的一个问题：[What if there were a war of programming languages wh
 **PHP：兽人**
 
 ![](http://ww3.sinaimg.cn/large/a74eed94jw1e3n8eyt4tcj.jpg)
+
 
 相貌丑陋，不守规矩，给管理他们的人带来了很多麻烦，尽管如此，他们仍统治了大半个中土。
 
@@ -79,7 +80,7 @@ Quora 上的一个问题：[What if there were a war of programming languages wh
 ![](http://ww2.sinaimg.cn/large/bfadf3bejw1e3n8fqxh8kj.jpg)
 
 
-没有谁比他更热衷于“至尊魔戒”的力量，和其他编程语言比较相比，它有双面性格，一面说 C++，另一面说 Python（ [Google's Go: A New Programming Language That's Python Meets C++ | TechCrunch](http://techcrunch.com/2009/11/10/google-go-language/)）。
+没有谁比他更热衷“至尊魔戒”的力量，和其他编程语言比较相比，它有双面性格，一面说 C++，另一面说 Python（ [Google's Go: A New Programming Language That's Python Meets C++ | TechCrunch](http://techcrunch.com/2009/11/10/google-go-language/)）。
 
 
 
@@ -89,7 +90,7 @@ Quora 上的一个问题：[What if there were a war of programming languages wh
 ![](http://ww4.sinaimg.cn/large/a74ecc4cjw1e3n8g43txnj.jpg)
 
 
-经常被小看。如果时间足够，邪念还是会腐蚀他们。有一些诈术（有好有坏，虽然初衷是好的）。众所周知，他们动作很慢，在夏尔（浏览器）中过着悠闲的生活，但如果你在其他地方（服务器端）看到它们，也别感到惊讶。
+经常被小看。如果时间足够，邪念还是会腐蚀他们。有一些骗术（有好有坏，虽然初衷是好的）。众所周知，他们动作很慢，在夏尔（浏览器）中过着悠闲的生活，但如果你在其他地方（服务器端）看到它们，也别感到惊讶。
 
 
 **APL：山中之民（也叫登哈洛的亡者）**
