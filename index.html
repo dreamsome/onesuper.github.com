@@ -9,10 +9,10 @@ title: Neverland
 {% for post in site.posts limit:1 %}
 <div class="postview">
   
-  <div class="entry_title"><h2><a href="{{ post.url }}">{{ post.title }}</a></h2></div>
-  <div class="timestamp">{{ post.date | date_to_string }}</div>   
+  <div class="pagetitle"><h1><a href="{{ post.url }}">{{ post.title }}</a></h1></div>
+
   {{post.content}}
-  
+  <div class="timestamp">{{ post.date | date_to_string }}</div>   
 </div>
 {% endfor %}
 

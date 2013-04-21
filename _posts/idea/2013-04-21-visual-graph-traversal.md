@@ -6,7 +6,7 @@ tags: [Algorithm]
 ---
 
 
-A one-week project:
+A one-week project. Briefed as follows:
 
 
 In Computer Science, graph traversal is a set of problems of visiting all the nodes(or vertices in a graph in a particular manner, updating and/or checking their attributes along the way.
@@ -27,7 +27,7 @@ And a table to reflect the changes to the intermediate variables, like:
 <img src="http://chengyichao.info/visual-graph-traversal/img/table.png">
 
 
-OK... They are just books. How could you ask for more?
+OK... They are just books. How could we ask for more?
 
 
 
