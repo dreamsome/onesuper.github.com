@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hamming 的研究建议"
+title: "Richard Hamming 的研究建议"
 category: essay
 tags: [research]
 ---
