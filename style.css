@@ -13,7 +13,7 @@ h1,h2,h3,h4 {
     font-family:  Georgia, "Times New Roman", Times, serif;
 }
 h1,h2 {font-weight: normal;}
-h3 {font-size: 18px;color: #333;}
+h3 {font-size: 18px;color: #295C06;}
 h4 {font-size: 16px;color: #333;}
 
 ul, ol{padding-left: 25px;margin-bottom: 20px;}
@@ -60,9 +60,9 @@ ul, ol{padding-left: 25px;margin-bottom: 20px;}
 }
 .content {padding: 20px 12px; width: 520px;}
 
-a {color: #579; text-decoration: none;}
+.content a {color: #579; text-decoration: none; border-bottom: 1px solid; }
 
-a:hover {color:#C00; text-decoration: none; }
+.content a:hover {color:#C00; text-decoration: none; background: #EBF1F7; }
 
 
 p {margin: 15px 0;}
@@ -75,11 +75,8 @@ pre {
     font-size: 13px;
     border: 0px;
     padding: 3px;
-    margin: 20px;
+    color: #D6459E;
     background: #E6F2F7;
-    -moz-box-shadow:2px 2px 8px #888;
-    -webkit-box-shadow:2px 2px 8px #888;
-    box-shadow:2px 2px 8px #888;
     word-wrap: break-word;
 }
 
@@ -90,11 +87,8 @@ p img {
 
 blockquote {
     margin: 20px 20px 20px 20px;
-    background: #FAEBBC;
-    color: #333;
+    color: #0E2F8A;
     padding: 10px;
-    border-top: 1px solid #E1CC89;
-    border-bottom: 1px solid #E1CC89;
 }
 
 .pagetitle h1{
@@ -168,7 +162,7 @@ blockquote {
 code {
     margin:0px;
     padding:0px;
-    background:#E6F2F7;
+    color: #D6459E;
 }
 
 
