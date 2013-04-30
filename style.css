@@ -20,9 +20,6 @@ ul, ol{padding-left: 25px;margin-bottom: 20px;}
 
 
 
-#sidebar {
-}
-
 
 #navs {
     position: fixed;
@@ -32,6 +29,7 @@ ul, ol{padding-left: 25px;margin-bottom: 20px;}
     border-top: none;
     font-size: 12px;
     height: 28px;
+    width: 100%;
 }
 
 
