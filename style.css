@@ -51,7 +51,7 @@ ul, ol{padding-left: 25px;margin-bottom: 20px;}
 
 .container {
     width: 740px;
-    margin: 80px auto 10px auto;
+    margin: 80px auto 30px auto;
     background: #fff;
     padding: 0 15px;
     -moz-box-shadow:4px 4px 0px #888;
@@ -64,7 +64,7 @@ a {text-decoration: none;}
 a:hover {text-decoration: none;}
 
 .content a {color: #579;  border-bottom: 1px dotted; }
-.content a:hover {color:#C00; background: #EBF1F7; }
+.content a:hover { background: #EBF1F7; }
 
 
 p {margin: 15px 0;}
