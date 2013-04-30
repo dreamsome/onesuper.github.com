@@ -60,9 +60,11 @@ ul, ol{padding-left: 25px;margin-bottom: 20px;}
 }
 .content {padding: 20px 12px; width: 520px;}
 
-.content a {color: #579; text-decoration: none; border-bottom: 1px solid; }
+a {text-decoration: none;}
+a:hover {text-decoration: none;}
 
-.content a:hover {color:#C00; text-decoration: none; background: #EBF1F7; }
+.content a {color: #579;  border-bottom: 1px dotted; }
+.content a:hover {color:#C00; background: #EBF1F7; }
 
 
 p {margin: 15px 0;}
