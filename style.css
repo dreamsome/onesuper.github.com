@@ -25,15 +25,16 @@ ul, ol{padding-left: 25px;margin-bottom: 20px;}
 
 
 #navs {
-    position: relative;
-    top: -10px;
+    position: fixed;
+    top: 0px;
     background:#333;
     border: 5px solid #222;
     border-top: none;
     font-size: 12px;
     height: 28px;
-    width: 530px;
 }
+
+
 
 #navs ul {
     float: left;
