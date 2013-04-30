@@ -64,7 +64,7 @@ a {text-decoration: none;}
 a:hover {text-decoration: none;}
 
 .content a {color: #579;  border-bottom: 1px dotted; }
-.content a:hover { background: #EBF1F7; }
+.content a:hover { background: #D0DAF7; }
 
 
 p {margin: 15px 0;}
@@ -78,7 +78,6 @@ pre {
     border: 0px;
     padding: 3px;
     color: #D6459E;
-    background: #E6F2F7;
     word-wrap: break-word;
 }
 
@@ -120,18 +119,6 @@ blockquote {
 .entry_title h2 a:hover {
     text-decoration: none;
     color: #C8A799;
-}
-
-
-#footer{
-    text-align:center;
-    background: #222;
-    padding: 5px;
-    color: #888;
-    border-top: 1px solid #777;
-    font-size: 12px;
-    margin-left: -22px;
-    margin-right: -22px;
 }
 
 
