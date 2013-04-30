@@ -5,7 +5,7 @@ body {
     line-height: 180%;
     background: #ccc;
     margin: 0;
-    font: normal 15px/1.75 'Noto Sans', sans-serif;
+    font: normal 14px/1.75 'Noto Sans', sans-serif;
 }
 
 h1,h2,h3,h4 {
@@ -13,7 +13,7 @@ h1,h2,h3,h4 {
     font-family:  Georgia, "Times New Roman", Times, serif;
 }
 h1,h2 {font-weight: normal;}
-h3 {font-size: 18px;color: #295C06;}
+h3 {font-size: 18px;color: #295C06; border-bottom: 1px solid #aaa;}
 h4 {font-size: 16px;color: #333;}
 
 ul, ol{padding-left: 25px;margin-bottom: 20px;}
@@ -99,6 +99,10 @@ blockquote {
     line-height: 23px;
     padding-bottom: 10px;
     margin: 0;
+}
+
+.pagetitle h1 a {
+    border: none;
 }
 
 .postview {
