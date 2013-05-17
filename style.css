@@ -18,7 +18,7 @@ h1,h2,h3,h4 {
 h3 {font-size: 16px; color: #060; margin: 20px 0; }
 h4 {font-size: 15px; color: #333;}
 
-ul, ol{padding-left: 25px;margin-bottom: 20px;}
+ul, ol{padding-left: 25px;margin: 20px;}
 
 
 
@@ -71,7 +71,6 @@ a:hover {text-decoration: none;}
 
 p {margin: 15px 0;}
 
-ul {list-style-type: square;}
 
 
 pre {
@@ -107,7 +106,8 @@ blockquote {
 }
 
 .postview {
-    margin: 30px 0;
+    margin: 40px 0;
+    border-bottom: 1px dashed #BBB;
 }
 .entry_title h2 {
     font-size: 20px;
