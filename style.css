@@ -15,8 +15,8 @@ h1,h2,h3,h4 {
     font-weight: normal;
 }
 
-h3 {font-size: 16px; color: #060; margin: 20px 0; }
-h4 {font-size: 15px; color: #333;}
+h3 {font-size: 18px; color: #060; margin: 20px 0; }
+h4 {font-size: 16px; color: #333;}
 
 ul, ol{padding-left: 25px;margin: 20px;}
 
@@ -52,15 +52,13 @@ ul, ol{padding-left: 25px;margin: 20px;}
 }
 
 .container {
-    width: 740px;
+    width: 770px;
     margin: 80px auto 30px auto;
     background: #fff;
-    padding: 0 15px;
-    -moz-box-shadow:4px 4px 0px #888;
-    -webkit-box-shadow:4px 4px 0px #888;
-    box-shadow:4px 4px 0px #888;
+    padding: 0 40px;
+    border: 1px solid #ddd;
 }
-.content {padding: 20px 12px; width: 520px;}
+.content {padding: 20px 12px; width: 550px;}
 
 a {text-decoration: none;}
 a:hover {text-decoration: none;}
@@ -77,19 +75,23 @@ pre {
     font-family: Menlo,Monaco,monospace;
     font-size: 13px;
     border: 0px;
-    padding: 3px;
+    padding: 20px;
+    background: #fafafa;
     color: #D6459E;
     word-wrap: break-word;
 }
 
 p img {
     max-width: 510px;
+    display: block;
+    margin: 40px auto;
 }
 
 
 blockquote {
-    margin: 20px 20px 20px 20px;
+    padding: 10px 20px;
     color: #0E2F8A;
+    background: #fafafa;
 }
 
 .pagetitle h1{
@@ -107,10 +109,11 @@ blockquote {
 
 .postview {
     margin: 40px 0;
-    border-bottom: 1px dashed #BBB;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #DDD;
 }
 .entry_title h2 {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 23px;
     margin: 0;
     padding-bottom: 2px;
@@ -186,9 +189,8 @@ hr {
 
 .pagenav {
     display: table;
-    width: 540px;
+    width: 600px;
     font-size: 16px;
-    font-family:  Georgia, "Times New Roman", Times, serif;
     margin-bottom: 5px;
 }
 .pagenav ul{
@@ -200,7 +202,7 @@ hr {
 
 .pagenav ul li{
     display: table-cell;
-    width: 270px;
+    width: 300px;
     
 }
 

@@ -18,7 +18,7 @@ Traditional algorithm books(e.g. CLRS) visualize the process of traversing by pr
 
 And a table to reflect the changes to the intermediate variables, like:
 
-<img src="http://chengyichao.info/visual-graph-traversal/img/table.png">
+<img src="http://ww2.sinaimg.cn/large/9c9ad557jw1e50ctfr6oxj20b602kgll.jpg">
 
 
 OK... They are just books. How could we ask for more?

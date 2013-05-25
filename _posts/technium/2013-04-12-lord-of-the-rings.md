@@ -6,9 +6,9 @@ tags: []
 ---
 
 
-Quora 上的一个问题：[What if there were a war of programming languages who would you support and why?](http://www.quora.com/Programming-Languages/What-if-there-were-a-war-of-programming-languages-who-would-you-support-and-why)
+在 Quora 上看到一个[好玩的回答](http://www.quora.com/Programming-Languages/What-if-there-were-a-war-of-programming-languages-who-would-you-support-and-why)：
 
----
+
 
 **C：“至尊魔戒”。**
 
