@@ -21,6 +21,28 @@ h4 {font-size: 16px; color: #333;}
 ul, ol{padding-left: 25px;margin: 20px;}
 
 
+.chaos {
+    -moz-column-width: 300px;
+    -webkit-column-width: 300px;
+    column-width: 300px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.chaos li {
+    margin-top: 5px;
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+.chaos .time {
+    color: #999;
+    float:right;
+}
+
+.chaos .title {
+    width: 250px;
+}
 
 #navs {
     position: fixed;
@@ -50,6 +72,21 @@ ul, ol{padding-left: 25px;margin: 20px;}
     padding: 0 15px;
     line-height: 28px;
 }
+#navs ul li a:hover {
+    color: #fff;
+    padding: 0 15px;
+    line-height: 28px;
+    background:none;
+}
+
+.snow {
+    width: 80%;
+    margin: 80px auto 30px auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
 
 .container {
     width: 770px;
@@ -60,11 +97,8 @@ ul, ol{padding-left: 25px;margin: 20px;}
 }
 .content {padding: 20px 12px; width: 550px;}
 
-a {text-decoration: none;}
-a:hover {text-decoration: none;}
-
-.content a {color: #579;  border-bottom: 1px dotted; }
-.content a:hover { background: #D0DAF7; }
+a {color: #579; text-decoration: none;  }
+a:hover { background: #D0DAF7; text-decoration: none;}
 
 
 p {margin: 15px 0;}
@@ -139,9 +173,10 @@ blockquote {
 
 .timestamp {
     color: #777;
-    line-height: 30px;
+    float: right;
+    position: relative;    
     font-size: 15px;
-    margin: 16px 0 10px 0;
+    margin-right: -150px;
     
 }
 

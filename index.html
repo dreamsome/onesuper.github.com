@@ -4,15 +4,21 @@ title: Neverland
 ---
 
 
+<div class="container">
+<div class="content">
+
 
 
 {% for post in paginator.posts %}
 <div class="postview">
   
-  <div class="pagetitle"><h1><a href="{{ post.url }}">{{ post.title }}</a></h1></div>
+  <div class="pagetitle">
+    <span class="timestamp">{{ post.date | date_to_string }}</span>   
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  </div>
 
   {{post.content}}
-  <div class="timestamp">{{ post.date | date_to_string }}</div>   
+
 </div>
 {% endfor %}
 
@@ -39,3 +45,8 @@ title: Neverland
 </ul>
 </div>
 
+
+
+
+</div>
+</div>

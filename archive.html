@@ -3,15 +3,21 @@ layout: default
 title: "Archive"
 ---
 
-<div class="row">
+<div class="snow">
 
+
+<ul class="chaos">
 {% for post in site.posts %}
-<a style="border:none;" href="{{post.url}}">{{ post.title }}</a> 
-
-<span style="color:#999; float:right">{{ post.date | date: "%y-%m-%d" }}</span><br>
+<li>
+  <a class="title" href="{{post.url}}">{{ post.title }}</a>
+  <span class="time">{{ post.date | date: "%y-%m-%d" }}</span>
+</li>
 
 
 {% endfor %}
+<ul>
+
+
 
 
 </div>
