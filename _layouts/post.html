@@ -3,21 +3,14 @@ layout: default
 ---
 
 
-<div class="container">
 <div class="content">
-
-<div class="row">
-
-    <div class="pagetitle">
-      <span class="timestamp">{{ page.date | date_to_string }}</span>    
-      <h1>{{ page.title }}</h1>
-      
-    </div>
-
-    {{ content }}
-
-</div>
-</div>
+<div class="pagetitle">
+  <span class="timestamp">{{ page.date | date_to_string }}</span>    
+  <h1>{{ page.title }}</h1>
+  
 </div>
 
+{{ content }}
 
+
+</div>
