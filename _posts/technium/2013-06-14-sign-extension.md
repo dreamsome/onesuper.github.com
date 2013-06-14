@@ -34,7 +34,7 @@ All the orginal numbers survive in the new representation and still perserve the
 The smallest positive numbers and the greatest negative numbers appear on the two sides of the representation, the shape of which is similar with the *-tan(x)* function.
 
 
-That's why we should pad consecutive 1 or 0 to the value, when casting it to a value with more bits. **Because** they are smaller/greater positive/negative numbers in the new reprsentation.
+That's why we should pad consecutive 1 or 0 to the value, when casting it to a value with more bits. **Because** the numbers represented by the current value are smaller/greater positive/negative numbers in the new reprsentation.
 
 
 It also explains why it's unsafe to cast a value backwards. **Because** in that case, we may lose the numbers in the middle.
