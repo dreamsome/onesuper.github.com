@@ -1,6 +1,6 @@
 ---
 layout: post
-title: " Sign Extension And Its Meaning"
+title: " Sign Extension and its Meaning"
 category: technium
 tags: []
 ---
