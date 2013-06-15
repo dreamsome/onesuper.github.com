@@ -16,7 +16,7 @@ Briefly speaking, to extend a positive/negative number simply requires padding t
 The essence of [2's complement](http://en.wikipedia.org/wiki/Two's_complement) is dividing the space of unsigned number into two parts - the lower part for non-negitive numbers, and the higher one for negative numbers, thus representing signed number.
 
 
-![](http://ww2.sinaimg.cn/large/9c9ad557jw1e5o0ek0061j20kf09iaad.jpg)
+![](http://ww3.sinaimg.cn/large/9c9ad557jw1e5oixxjotrj20dw06h74c.jpg)
 
 
 One great thing about 2's complement is that the most-significant bit tells us whether the value is negative.
@@ -25,7 +25,7 @@ One great thing about 2's complement is that the most-significant bit tells us w
 If we use one more bit, the number space doubles symmetrically, representing twice as many as the numbers.   
 
 
-![](http://ww2.sinaimg.cn/large/9c9ad557jw1e5o0ezb6n7j21090adq3w.jpg)
+![](http://ww3.sinaimg.cn/large/9c9ad557jw1e5oixjo6d6j20m806dmxk.jpg)
 
 
 All the orginal numbers survive in the new representation and still perserve their old meanings.
