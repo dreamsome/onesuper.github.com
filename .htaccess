@@ -1,0 +1,4 @@
+Options+FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^blog.chengyichao.info [NC]
+RewriteRule ^(.*)$ http://dreamsome.org/$1 [L,R=301]
