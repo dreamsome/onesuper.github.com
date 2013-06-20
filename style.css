@@ -153,9 +153,8 @@ blockquote {
 }
 
 .postview {
-
-
 }
+
 .entry_title h2 {
     font-size: 22px;
     line-height: 23px;
@@ -173,15 +172,12 @@ blockquote {
     color: #C8A799;
 }
 
-
-
 .timestamp {
     color: #777;
     float: right;
     position: relative;    
     font-size: 15px;
-    margin-right: -150px;
-    
+    margin-right: -150px;    
 }
 
 
@@ -212,8 +208,6 @@ code {
     float: right;
     padding: 5px;
     position: relative;
-
-
 }
 
 

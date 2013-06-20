@@ -7,7 +7,7 @@ tags: []
 
 In C language, it's always safe to save a short value in an integer variable, whereas the other way around is not permitted. Why?
 
-When dumping a 16-bit signed number to a 32-bit variable, the computer needs to do some extra work, making sure the **meaning** of the value remains the same. It needs to **sign extend** the value.
+When dumping a 16-bit signed number to a 32-bit variable, the computer needs to do some extra work, making sure the **meaning** of the value remains the same. It needs to **sign-extend** the value.
 
 
 Briefly speaking, to extend a positive/negative number simply requires padding the old value with 0s/1s on the left side. But why? 
