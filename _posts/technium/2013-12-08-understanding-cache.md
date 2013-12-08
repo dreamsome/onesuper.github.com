@@ -7,7 +7,7 @@ tags: []
 
 Cache is the hardware implemention of a [map](http://en.wikipedia.org/wiki/Associative_array)(a cache can be regarded as a subset of the main memory)  when hash table is the software implementation of it.
 
-By thinking caches as software hash tables, many concepts about cache can be illustrated in the context of data structure manipulation(in high level languages) instead of  the context of binary operations. 
+By thinking caches as software hash tables, many concepts about cache can be illustrated in the context of data structure manipulation(in high level languages) instead of  the context of signal-level operations. 
 
 
 ### Preliminaries
@@ -89,7 +89,7 @@ The entries within one bucket is called **ways**. The cache above is 4-way set a
 
 ### Valid Bit
 
-Everything in hardware is 0101. A single valid bit is used in each entry to indicate whether it is holding a mapped memory location or a meaningless random value . 
+Everything in hardware is 0101. A single valid bit is used in each entry to indicate whether it is holding a mapped memory location as well as its content or a meaningless random value . 
 
 	[Bucket]|v| entry 1 |v| entry 2 |v| entry 3 |v| entry 4
 	[0]|1|  (8, x) |0|    -    |0|    -    |0|   -
@@ -103,7 +103,7 @@ Everything in hardware is 0101. A single valid bit is used in each entry to indi
 
 ### Optimization 1: Associative Comparison 
 
-It is possible to parallelize the process of entry searching by using serval comparators at circuit level. Assume we have a 8-set 2-way cache, given a memory location `i` 
+It is possible to parallelize the process of entry searching by adding serval [comparators](http://en.wikipedia.org/wiki/Digital_comparator) at circuit level. Assume we have a 8-set 2-way cache, given a memory location `i`:
 
 	def accessMemory(i):
 	    # This part can be parallelized through parallel curcuits
