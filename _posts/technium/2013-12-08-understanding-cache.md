@@ -64,7 +64,7 @@ A **cache miss** happens when the CPU fails to find such match. That means the t
 
 Two observations can be derived from the picture of our hash table:
 
-* The more buckets a cache has, the less likely it is that collision<span class=sidenote"">The term collision is inherited from the hash table. The hardware people call this condition "conflict" </span> will occur. In an extreme case, if the number of buckets is equal to  N, the collision is eliminated entirely. 
+* The more buckets a cache has, the less likely it is that collision<span class=sidenote"sidenote">The term collision is inherited from the hash table. The hardware people call this condition "conflict" </span> will occur. In an extreme case, if the number of buckets is equal to  N, the collision is eliminated entirely. 
 * The average time to look up a certain memory location in cache is related to the average size of the chains. Finding the bucket requires only O(1) time, while searching for desired key alongside the chain is time-consuming because it is sequential.
 
 The **buckets** are also known as **sets** in cache terminology.
