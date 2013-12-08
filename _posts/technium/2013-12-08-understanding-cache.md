@@ -38,7 +38,7 @@ Given a memory location `i`, a **reference** to the cache is analogous to the pr
 *  Calculate the bucket id from the memory location `i`
 *  Search alongside the chain, comparing each entry’s key with `i`
 
-If any key is matched, then the CPU knows the target memory location has already been hashed. So CPU directly operates on `value` field instead of accessing the main memory. This condition is always known as **cache hit**.
+If any key is matched, then the CPU knows the desired memory location has already been hashed. So CPU directly operates on the `value` field instead of accessing the main memory. This condition is always known as **cache hit**.
 
 	def accessMemory(i, op):
 	    if Cache.has_key(i):
