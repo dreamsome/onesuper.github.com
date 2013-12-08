@@ -146,12 +146,12 @@ It is redundant to save the entire id in the entry, since all the entires in one
 	[6]|0|     -   |0|    -    |0|    -    |0|   -  
 	[7]|0|  (5, x) |0|    -    |0|    -    |0|   -
 
-The hardware people often name **tag** this bucket-wise unique id. By comparing the tag of all the entries within a bucket, CPU can figure out whether the given memory location is hashed as well.
+The hardware people often name **tag** this bucket-wise unique id. By comparing to the tag of all the entries within a bucket, CPU can figure out whether hit or not as well.
 
 
 ### Cache Block
 
-In fact, each entry in the cache holds a **block** of bytes. So the memory location metioned above refers to the start of block. 
+In fact, each entry in the cache holds a **block** of bytes. So the memory location metioned above refers to the start of a block. 
 
 	def accessMemory(i, offset, op):
 	    ...
