@@ -18,15 +18,15 @@ If we consider memory as a large vector(i.e. `Memory[N]`), then a cache is an un
 
 A software version of cache without any limitations can be implemented as [seperate chaining hash table](http://en.wikipedia.org/wiki/Hash_table#Separate_chaining):
 
-	[Bucket] (id1: x1) -> (id2: x2)
-	[0] (8: x)
-	[1] (17: x) -> (57: x)
-	[2] (2: x) -> (10: x) -> (34: x)
-	[3] (19: x) -> (11: x) -> (59: x) -> (3: x)
-	[4] (36: x) -> (4: x)
-	[5] (5: x)
+	[Bucket] (id1, x1) -> (id2, x2)
+	[0] (8, x)
+	[1] (17, x) -> (57, x)
+	[2] (2, x) -> (10, x) -> (34, x)
+	[3] (19, x) -> (11, x) -> (59, x) -> (3, x)
+	[4] (36, x) -> (4, x)
+	[5] (5, x)
 	[6]  
-	[7] (47: x)
+	[7] (47. x)
 
 Here we use `f(x) = x % 8` as the hash function. That is, memory location `i` is hashed into the bucket with id  `i%8`. The collision problem is resolved through chaining.
 
@@ -38,7 +38,7 @@ Given a memory location `i`, a **reference** to the cache is analogous to the pr
 *  Calculate the bucket id from the memory location `i`
 *  Search alongside the chain, comparing each entry’s key with `i`
 
-If any key is matched, then the CPU knows the target memory location has already been hashed. So CPU fetches data directly from the `value` field instead of accessing the main memory. This condition is always known as **cache hit**.
+If any key is matched, then the CPU knows the target memory location has already been hashed. So CPU directly operates on `value` field instead of accessing the main memory. This condition is always known as **cache hit**.
 
 	def accessMemory(i, op):
 	    if Cache.has_key(i):
@@ -64,8 +64,8 @@ A **cache miss** happens when the CPU fails to find such match. That means the t
 
 Two observations can be derived from the picture of our hash table:
 
-* The more buckets the cache has, the less likely it is that collision will occur. In an extreme case, if the number of buckets is equal to  N, the collision is eliminated entirely. 
-* The average time to look up a certain memory location in cache is related to the average size of the chains. Finding the bucket requires only O(1) time, however searching entries alongside the chain is time-consuming because it is sequential.
+* The more buckets a cache has, the less likely it is that collision<span class=sidenote"">The term collision is inherited from the hash table. The hardware people call this condition "conflict" </span> will occur. In an extreme case, if the number of buckets is equal to  N, the collision is eliminated entirely. 
+* The average time to look up a certain memory location in cache is related to the average size of the chains. Finding the bucket requires only O(1) time, while searching for desired key alongside the chain is time-consuming because it is sequential.
 
 The **buckets** are also known as **sets** in cache terminology.
 
@@ -73,7 +73,7 @@ The **buckets** are also known as **sets** in cache terminology.
 ### Ways
 
 At hardware level, it is non-trivial to implement data structures like linked-lists. 
-The alternative way is to sparsely organize the entires within one bucket as fixed-length arrays.
+The alternative way is to sparsely organize the entries within one bucket as a fixed-length array.
 
 	[Bucket] entry 1 | entry 2 | entry 3 | entry 4
 	[0]  (8, x) |    -    |    -    |   -
@@ -85,11 +85,11 @@ The alternative way is to sparsely organize the entires within one bucket as fix
 	[6]     -   |    -    |    -    |   -  
 	[7] (47, x) |    -    |    -    |   -  
 
-The length of the array in each bucket is called **ways**. The cache above is 4-way set associative.
+The entries within one bucket is called **ways**. The cache above is 4-way set associative.
 
 ### Valid Bit
 
-Everything in hardware is 0101. A single valid bit is used in each entry to indicate whether an entry is holding a mapped memory location instead of a meaningless random value . 
+Everything in hardware is 0101. A single valid bit is used in each entry to indicate whether it is holding a mapped memory location or a meaningless random value . 
 
 	[Bucket]|v| entry 1 |v| entry 2 |v| entry 3 |v| entry 4
 	[0]|1|  (8, x) |0|    -    |0|    -    |0|   -
@@ -107,6 +107,7 @@ It is possible to parallelize the process of entry searching by using serval com
 
 	def accessMemory(i):
 	    # This part can be parallelized through parallel curcuits
+	    # You will see the cuicuits later
 	    cache_hit = (( i == key1) && v1) || (( i == key2) && v2)
         ...
         
@@ -119,21 +120,21 @@ Since the length of arrays in each bucket(number of the ways) is fixed, CPU can 
 
 ### Conflict Miss
 
-Assume a cache is N-way set associative. If N is set too small, **conflict misses** will occur. Say N = 1, an application alternatively uses the data coming from memory location #5 and #13, both of which are hashed to the same cache set.  Hence, the reference to location #5 will lead to the eviction of the entry of #13 and vice versa.
+Assume a cache is N-way set associative. If N is set too small, **conflict misses** will occur. Say N = 1, an application alternatively operates on memory location #5 and #13, both of which are hashed into the same cache set.  Hence, the reference to location #5 will lead to the eviction of the entry of #13 and vice versa.
 
-Increasing N will potentially reduce conflict misses. However more ways also means more power, larger chip-area and longer searching time, so how to choose a best N is [some kind of art](https://www.google.com.hk/search?q=Six+Basic+Cache+Optimizations&oq=Six+Basic+Cache+Optimizations ).
+Although increasing N will potentially reduce conflict misses, more ways also means more power, larger chip-area and longer searching time, so how to choose a best N is [some kind of art](https://www.google.com.hk/search?q=Six+Basic+Cache+Optimizations&oq=Six+Basic+Cache+Optimizations).
  
 
 ### LRU
 
-One simple replacement policy is LRU(Least-Recently Used) which always elects the least-recently used entry to be replaced. This policy is intuitive because of the temporal locality of data[http://en.wikipedia.org/wiki/Locality_of_reference].
+One simple replacement policy is [LRU(Least-Recently Used)](http://en.wikipedia.org/wiki/LRU) which always elects the least-recently used entry to be replaced. This policy is intuitive because of the [temporal locality of data](http://en.wikipedia.org/wiki/Locality_of_reference).
 
-LRU algorithm is equivalent to implementing a dynamic priority queue for each bucket.
+LRU algorithm is equivalent to implementing a [priority queue](http://en.wikipedia.org/wiki/Priority_queue) for each bucket.
 
 
 ### Optimization 2: Substituting IDs with Tags
 
-It is redundant to save the entire id in the entry. Instead, we can store `id/k` only, since all the entires in one slot share the same bucket id. So the hash table can be compressed to:
+It is redundant to save the entire id in the entry, since all the entires in one slot share the same bucket id. Instead, we can store `id/k` only. So the hash table can be compressed to:
 
 	[Bucket]|v| entry 1 |v| entry 2 |v| entry 3 |v| entry 4
 	[0]|1|  (1, x) |0|    -    |0|    -    |0|   -
@@ -174,5 +175,5 @@ Assume there are 16 bytes per block, the final picture of our cache looks like:
 
 ### The Real Picture
 
-	![](http://ww3.sinaimg.cn/mw690/534218ffjw1ebcgaxt5guj20li0i6wg7.jpg)
+![](http://ww3.sinaimg.cn/mw690/534218ffjw1ebcgaxt5guj20li0i6wg7.jpg)
 
