@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Programmer and Creator"
+title: "程序员与创造家"
 category: essay
 tags: [hacker, tech]
 ---

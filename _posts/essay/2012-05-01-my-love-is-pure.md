@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My Love Is Pure"
+title: "喜欢"
 category: essay
 tags: [prose]
 
