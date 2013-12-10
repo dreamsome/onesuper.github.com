@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ScribblerToo"
+title: "涂鸦"
 category: life
 tags: []
 ---

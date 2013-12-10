@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A Day in the Life"
+title: "一天"
 category: life
 tags: []
 ---
