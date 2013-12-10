@@ -8,8 +8,9 @@ title: "Archive"
 <ul class="chaos">
 {% for post in site.posts %}
 <li>
-  <a class="title" href="{{post.url}}">{{ post.title }}</a>
   <span class="time">{{ post.date | date: "%y-%m-%d" }}</span>
+  <a class="title" href="{{post.url}}">{{ post.title }}</a>
+
 </li>
 
 

@@ -43,10 +43,12 @@ ul, ol{padding-left: 25px;margin: 20px;}
 .chaos .time {
     color: #999;
     float: right;
+    display: inline-block;
 }
 
 .chaos .title {
-
+    width: 280px;
+    display: inline-block;
 }
 
 
