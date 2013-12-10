@@ -44,7 +44,7 @@ If any key is matched, then the CPU knows the desired memory location has alread
 	    if Cache.has_key(i):
 		    cache_hit = 1
 		 if cache_hit:
-		    content = Cache.get_key(i)
+		    content = Cache.get(i)
 		    return content.op()
 
 A **cache miss** happens when the CPU fails to find such match. That means the target memory location has not yet been hashed. As a result, CPU fetches the data from remote memory, and inserts it into its bucket before operating on them.
@@ -89,7 +89,7 @@ The entries within one bucket is called **ways**. The cache above is 4-way set a
 
 ### Valid Bit
 
-Everything in hardware is 0101. A single valid bit is used in each entry to indicate whether it is holding a mapped memory location as well as its content or a meaningless random value . 
+Everything in hardware is "0101...". A single **valid bit*** is used in each entry to indicate whether the entry is holding a mapped memory location associated with its content or a meaningless random value . 
 
 	[Bucket]|v| entry 1 |v| entry 2 |v| entry 3 |v| entry 4
 	[0]|1|  (8, x) |0|    -    |0|    -    |0|   -
@@ -116,7 +116,7 @@ By comparing simultaneously, CPU can judge whether cache hit or not very quickly
 
 ### Replacement
 
-Since the length of arrays in each bucket(number of the ways) is fixed, CPU can not insert as many as entries it wants. Each time CPU tries to insert an entry into a full row , one existing entry in that row will be *victimized*, making room for the new entry. The process of choosing a entry to be knocked out is called **replacement**.
+Since the length of arrays in each bucket is limited(4 in this case), CPU can not insert as many as entries as it wants. Each time CPU tries to insert an entry into a full row, one existing entry in that row must be **victimized**, making room for the new entry. The process of choosing a entry to be knocked out is called **replacement**.
 
 ### Conflict Miss
 
@@ -134,7 +134,7 @@ LRU algorithm is equivalent to implementing a [priority queue](http://en.wikiped
 
 ### Optimization 2: Substituting IDs with Tags
 
-It is redundant to save the entire id in the entry, since all the entires in one slot share the same bucket id. Instead, we can store `id/k` only. So the hash table can be compressed to:
+It is redundant to save the entire id in the entry, since all the entires in one slot share the same bucket id. Instead, we can store `id/k` only. So the hash table can be further compressed to:
 
 	[Bucket]|v| entry 1 |v| entry 2 |v| entry 3 |v| entry 4
 	[0]|1|  (1, x) |0|    -    |0|    -    |0|   -
@@ -146,17 +146,17 @@ It is redundant to save the entire id in the entry, since all the entires in one
 	[6]|0|     -   |0|    -    |0|    -    |0|   -  
 	[7]|0|  (5, x) |0|    -    |0|    -    |0|   -
 
-The hardware people often name **tag** this bucket-wise unique id. By comparing to the tag of all the entries within a bucket, CPU can figure out whether hit or not as well.
+The hardware people often name **tag** this bucket-wise unique id. By comparing to the tags of all the entries within a bucket, CPU can figure out whether hit or not.
 
 
 ### Cache Block
 
-In fact, each entry in the cache holds a **block** of bytes. So the memory location metioned above refers to the start of a block. 
+In fact, each entry in the cache holds a **block** of data. So the memory location metioned above refers to the start of a block. 
 
 	def accessMemory(i, offset, op):
 	    ...
 	    if cache_hit:
-		  block = cache.get_key(i)
+		  block = cache.get(i)
 		  return block[offset].op()
 
 Assume there are 16 bytes per block, the final picture of our cache looks like:
@@ -172,8 +172,6 @@ Assume there are 16 bytes per block, the final picture of our cache looks like:
 	[7]|0|  (5, B[16]) |0|      -      |0|      -      |0|   -
 
 
-
 ### The Real Picture
 
 ![](http://ww3.sinaimg.cn/mw690/534218ffjw1ebcgaxt5guj20li0i6wg7.jpg)
-
