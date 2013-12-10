@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kill Assembly
+title: "杀死汇编"
 category: technium
 tags: []
 ---

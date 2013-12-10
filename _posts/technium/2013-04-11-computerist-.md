@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Again，计算机不是科学"
+title: "Again, 计算机不是科学"
 category: technium
 tags: []
 ---
