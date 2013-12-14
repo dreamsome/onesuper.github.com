@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "UNIX 如何管理磁盘"
+title: "UNIX磁盘管理"
 category: technium
 tags: [UNIX]
 ---

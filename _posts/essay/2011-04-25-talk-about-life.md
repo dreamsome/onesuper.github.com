@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "当我谈人生时，我谈些什么"
+title: "人生的几个比喻"
 category: essay
 tags: [life]
 ---
