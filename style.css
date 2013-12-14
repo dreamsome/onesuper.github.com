@@ -8,7 +8,7 @@ html {
 body {
     color: #444;
     line-height: 180%;
-    background: #ffffff;
+    background: #FFFFFF;
     margin: 0;
     height: 100%;
     font: normal 14px/1.75 'Noto Sans', sans-serif;
@@ -26,9 +26,9 @@ ul, ol{padding-left: 25px;margin: 20px;}
 
 
 .chaos {
-    -moz-column-width: 330px;
-    -webkit-column-width: 330px;
-    column-width: 330px;
+    -moz-column-width: 250px;
+    -webkit-column-width: 250px;
+    column-width: 250px;
     margin: 0px;
     padding: 0px;
 }
@@ -53,62 +53,24 @@ ul, ol{padding-left: 25px;margin: 20px;}
 
 
 #navs {
-    background: #eee;
-    background-image: url(images/texture.png);
-    width: 200px;
-    float: left;
-    display: inline;
-    padding-top: 50px;
-    padding-left: 50px;
-    position: fixed;
-    height: 100%;
-    z-index: 0;
-    top: 0;
-    left: 0px;
 }
 
 
 
-#navs ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-#navs ul li{
-    
-}
-#navs ul li a {
-    color: black;
-    line-height: 28px;
-}
-#navs ul li a:hover {
-    color: #555;
-    line-height: 28px;
-    background:none;
-}
-
-#navs .contact {
-    margin-top: 100px;
-    font-size: 12px;
-    position: absolute;
-    bottom: 100px;
-
-}
 
 
 .container {
-    margin-left: 250px;
-    background: #fff;
+    
     padding: 50px 40px;
 
 }
-.content { width: 600px;  padding-left: 15px;}
+.content { width: 575px; }
 
 a {color: #579; text-decoration: none;  }
 a:hover { background: #D0DAF7; text-decoration: none;}
 
 
-p {margin: 15px 0;}
+p { margin: 15px 0; }
 
 hr {
     height: 50px;
