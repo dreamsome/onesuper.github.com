@@ -53,14 +53,19 @@ ul, ol{padding-left: 25px;margin: 20px;}
 
 
 #nav {
-    position: absolute;
-    left: 10px;
-    top: 10px;
+    text-align: center;
+    padding: 10px;
 }
 
 #hat {
-    font-size: 16px;
-    color: #000;
+
+    font-size: 40px;
+    color: #777;
+    font-family: Futura-CondensedMedium, Futura, sans-serif;;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    text-shadow: rgba(0, 0, 0, 0.2) 3px 1px 0px;
+    font-weight: normal;
 }
 
 #hat:hover {
@@ -69,7 +74,7 @@ ul, ol{padding-left: 25px;margin: 20px;}
 
 .container {
     
-    padding: 50px 40px;
+    padding: 0 50px 40px;
 
 }
 .content { width: 575px; margin: 0 auto; }
