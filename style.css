@@ -53,6 +53,9 @@ ul, ol{padding-left: 25px;margin: 20px;}
 
 
 #navs {
+    position: absolute:
+    left: 0;
+    top: 0;
 }
 
 
@@ -64,7 +67,7 @@ ul, ol{padding-left: 25px;margin: 20px;}
     padding: 50px 40px;
 
 }
-.content { width: 575px; }
+.content { width: 575px; margin: 0 auto; }
 
 a {color: #579; text-decoration: none;  }
 a:hover { background: #D0DAF7; text-decoration: none;}
