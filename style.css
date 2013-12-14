@@ -63,7 +63,9 @@ ul, ol{padding-left: 25px;margin: 20px;}
     color: #000;
 }
 
-
+#hat:hover {
+    background: none;
+}
 
 .container {
     
