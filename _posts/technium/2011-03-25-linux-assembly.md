@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Linux 汇编入门"
+title: "Linux汇编入门"
 category: technium
 tags: [linux,assembly]
 ---

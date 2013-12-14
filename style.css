@@ -26,11 +26,11 @@ ul, ol{padding-left: 25px;margin: 20px;}
 
 
 .chaos {
-    -moz-column-width: 250px;
-    -webkit-column-width: 250px;
-    column-width: 250px;
+    -moz-column-width: 222px;
+    -webkit-column-width: 222px;
+    column-width: 222px;
     margin: 0px;
-    padding: 0px;
+    padding: 0px 40px;
 }
 
 .chaos li {

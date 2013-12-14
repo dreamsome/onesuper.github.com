@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GPU 和并行编程的八卦"
+title: "GPU"
 category: technium
 tags: [GPU, programming, parallel]
 

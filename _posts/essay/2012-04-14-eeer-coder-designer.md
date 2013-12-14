@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "不想当程序员的 EEer 不是好设计师"
+title: "不想当程序员的EEer不是好设计师"
 category: essay
 tags: [career]
 

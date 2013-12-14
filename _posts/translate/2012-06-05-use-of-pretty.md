@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "pretty 作副词"
+title: "pretty"
 category: translate
 tags: [translate]
 

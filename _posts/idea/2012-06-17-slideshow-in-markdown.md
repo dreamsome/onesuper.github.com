@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "用 Markdown 写幻灯片，用浏览器展示"
+title: "用Markdown写幻灯片"
 category: idea
 tags: [Markdown, slideshow]
 ---
