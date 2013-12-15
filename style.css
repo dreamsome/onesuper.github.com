@@ -143,9 +143,10 @@ blockquote {
     color: #333;
 }
 
-
-.postview {
+.pagetitle h1 a:hover {
+    background: none;
 }
+
 
 .entry_title h2 {
     font-size: 22px;
