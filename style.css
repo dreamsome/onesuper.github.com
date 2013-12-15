@@ -14,6 +14,12 @@ body {
     font: normal 14px/1.75 'Noto Sans', sans-serif;
 }
 
+
+
+a {color: #3159A3; text-decoration: none; }
+
+a:hover { background: #D0DAF7; text-decoration: none;}
+
 h1,h2,h3,h4 {
     margin: 20px 0;
     font-weight: normal;
@@ -24,6 +30,18 @@ h4 {font-size: 16px; color: #333;}
 
 ul, ol{padding-left: 25px;margin: 20px;}
 
+
+#ladder {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 5px;
+}
+
+#ladder a:hover {
+    background: none;
+    opacity: 0.73;
+}
 
 .chaos {
     -moz-column-width: 222px;
@@ -51,12 +69,6 @@ ul, ol{padding-left: 25px;margin: 20px;}
 }
 
 
-
-#nav {
-    text-align: center;
-    padding: 30px;
-}
-
 #hat {
 
     font-size: 40px;
@@ -78,11 +90,6 @@ ul, ol{padding-left: 25px;margin: 20px;}
 
 }
 
-
-
-a {color: #3159A3; text-decoration: none; }
-
-a:hover { background: #D0DAF7; text-decoration: none;}
 
 
 .content { width: 575px; margin: 0 auto; }

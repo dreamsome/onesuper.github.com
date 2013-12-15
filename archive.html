@@ -4,7 +4,7 @@ title: "ls -t"
 ---
 
 
-<div style="position: absolute; left: 0; top: 0;">
+<div id="ladder">
 <a href="/"><img src="/images/ButtonHome.png"></a>
 </div>
 
@@ -23,7 +23,7 @@ title: "ls -t"
     {% endunless %}
 
     <li>
-      <span class="time">{{ post.date | date:"%m-%-d" }} </span>
+      <span class="time">{{ post.date | date:"%-m-%-d" }} </span>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
 
