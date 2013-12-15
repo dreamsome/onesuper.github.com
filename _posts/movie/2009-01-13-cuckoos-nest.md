@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "《飞跃疯人院》"
+title: "飞跃疯人院"
 category: movie
 tags: [movie]
 ---

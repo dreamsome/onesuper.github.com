@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "《旅行的艺术》"
+title: "旅行的艺术"
 category: reading
 tags: [reading]
 

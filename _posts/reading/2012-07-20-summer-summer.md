@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "《夏天，夏天》"
+title: "夏天，夏天"
 category: reading
 ---
 

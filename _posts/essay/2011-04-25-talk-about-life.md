@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "人生的几个比喻"
+title: "人生的比喻"
 category: essay
 tags: [life]
 ---

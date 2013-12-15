@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "《翻译研究》"
+title: "翻译研究"
 category: reading
 tag: [book, translation]
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "《拖延心理学》"
+title: "拖延心理学"
 category: reading
 tags: []
 
