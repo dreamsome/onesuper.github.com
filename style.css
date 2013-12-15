@@ -18,7 +18,7 @@ body {
 
 a {color: #3159A3; text-decoration: none; }
 
-a:hover { background: #D0DAF7; text-decoration: none;}
+a:hover {  text-decoration: none;}
 
 h1,h2,h3,h4 {
     margin: 20px 0;
@@ -95,6 +95,8 @@ ul, ol{padding-left: 25px;margin: 20px;}
 .content { width: 575px; margin: 0 auto; }
 
 .content a { border-bottom: 1px dotted #3159A3; }
+.content a:hover { background: #D0DAF7; }
+
 
 p { margin: 15px 0; }
 
@@ -137,7 +139,9 @@ blockquote {
 
 .pagetitle h1 a {
     border: none;
+    color: #333;
 }
+
 
 .postview {
 }
