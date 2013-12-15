@@ -77,11 +77,17 @@ ul, ol{padding-left: 25px;margin: 20px;}
     padding: 0 50px 40px;
 
 }
-.content { width: 575px; margin: 0 auto; }
 
-a {color: #579; text-decoration: none;  }
+
+
+a {color: #3159A3; text-decoration: none; }
+
 a:hover { background: #D0DAF7; text-decoration: none;}
 
+
+.content { width: 575px; margin: 0 auto; }
+
+.content a { border-bottom: 1px dotted #3159A3; }
 
 p { margin: 15px 0; }
 
@@ -114,10 +120,10 @@ blockquote {
 }
 
 .pagetitle h1{
-    color: #3159A3;
+    color: #777;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 26px;
+    font-size: 22px;
+    line-height: 24px;
     padding-bottom: 15px;
     margin: 0;
 }
@@ -137,7 +143,7 @@ blockquote {
 }
 
 .entry_title h2 a {
-    color: #3159A3;
+    color: #000;
     text-decoration: none;
 }
 
