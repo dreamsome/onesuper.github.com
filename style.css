@@ -95,9 +95,10 @@ ul, ol{padding-left: 25px;margin: 20px;}
 
 .content { width: 575px; margin: 0 auto; }
 
-.content a { border-bottom: 1px dotted #3159A3; }
+.content a  { border-bottom: 1px dotted #3159A3; }
 .content a:hover { background: #D0DAF7; }
 
+.chaos a:hover { text-decoration: underline;}
 
 p { margin: 15px 0; }
 

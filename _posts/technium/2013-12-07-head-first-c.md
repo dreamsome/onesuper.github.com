@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "《嗨翻C语言》译者序"
+title: "译者序"
 category: technium
 tags: []
 ---
 
-上市一个月了，如果你对我的文字有信心，可以[买一本](http://book.douban.com/subject/25703412/)回家（虽然有点小贵）。
-
-### 译者序
+（上市一个月了，如果你对我的文字有信心，可以[买一本](http://book.douban.com/subject/25703412/)回家，虽然有点小贵。）
 
 1969年“阿波罗11号”登月成功，贝尔实验室中一个叫 Ken Thompson 的年轻人为了一圆翱游太空的梦想，在当时的 Mutlics 系统上写了一个叫《星际之旅》的游戏。但当时大型机的机时费很贵，每玩一次公司就要为此支付 75 美金，所以 Thompson 打起了小型机 PDP-7 的主意，但当时的 PDP-7只 有一个简陋的运行时系统，不支持多用户，为了能双人对战，Thompson 找来 Dennis Ritchie 一起开发新的操作系统。
 
