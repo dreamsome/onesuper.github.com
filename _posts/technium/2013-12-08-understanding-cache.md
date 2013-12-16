@@ -7,7 +7,7 @@ tags: []
 
 Cache is the hardware implemention of a [map](http://en.wikipedia.org/wiki/Associative_array)(a cache can be regarded as a subset of the main memory)  when hash table is the software implementation of it.
 
-By thinking caches as software hash tables, many concepts about cache can be illustrated in the context of data structure manipulation(in high level languages) instead of  the context of signal-level operations. 
+By thinking caches as software hash tables, many concepts about cache can be illustrated in the context of data structure manipulation(in high level languages) instead of  that of bit-wise operations. 
 
 
 ### Preliminaries
@@ -89,7 +89,7 @@ The entries within one bucket is called **ways**. The cache above is 4-way set a
 
 ### Valid Bit
 
-Everything in hardware is "0101...". A single **valid bit*** is used in each entry to indicate whether the entry is holding a mapped memory location associated with its content or a meaningless random value . 
+Everything in hardware is *0101...*. A single **valid bit** is used in each entry to indicate whether the entry is holding a mapped memory location associated with its content or a meaningless random value . 
 
 	[Bucket]|v| entry 1 |v| entry 2 |v| entry 3 |v| entry 4
 	[0]|1|  (8, x) |0|    -    |0|    -    |0|   -
