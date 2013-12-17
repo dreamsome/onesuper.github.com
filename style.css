@@ -209,3 +209,7 @@ code {
     text-align: center;
     margin: 30px;
 }
+
+strong {
+    color: rgb(235, 53, 53);
+}
