@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "亚里士多德的错误"
+title: "控制变量"
 tags: []
 ---
 
