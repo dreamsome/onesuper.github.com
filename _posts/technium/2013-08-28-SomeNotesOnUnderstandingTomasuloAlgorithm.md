@@ -3,7 +3,7 @@ layout: post
 title: "Some Notes on \"Understanding Tomasulo Algorithm\""
 ---
 
-I have made an interesting presentation for illustrating Tomasulo Algorithm, an important milestone in modern processors. I strongly recommand you to have a look at [it](http://www.slideshare.net/onesuper/understanding-tomasolu-algorithm).
+I have made an interesting presentation for illustrating Tomasulo Algorithm, an important milestone in modern processors. I strongly recommend you to have a look at [it](http://www.slideshare.net/onesuper/understanding-tomasolu-algorithm). Here are some breif notes on this topic.
 
 **1.Textbook is just one of the references to knowledge, but not all of them.**
 
