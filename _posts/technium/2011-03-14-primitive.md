@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "什么是“原语”"
+title: "原语"
 category: technium
 tags: []
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "并行编程难在哪？"
+title: "并行编程难在哪"
 category: technium
 tags: []
 ---
