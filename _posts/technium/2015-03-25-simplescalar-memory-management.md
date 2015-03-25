@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SimpleScalar源代码分析(1)：内存管理"
+title: "SimpleScalar源代码分析(2)：内存管理"
 ---
 
 
