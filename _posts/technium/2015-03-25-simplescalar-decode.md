@@ -18,8 +18,8 @@ SimpleScalar 定义 ISA 和进行译码的过程十分有趣。
 
     typedef unsigned int SS_ADDR_TYPE;
     typedef struct {
-    unsigned int a;
-    unsigned int b;
+      unsigned int a;
+      unsigned int b;
     } SS_INST_TYPE;
 
 
@@ -89,21 +89,21 @@ ss 用了一张表格来保存所有的指令的名字，其实就是一个 enum
 
     while (TRUE)
     {
-    ....
-    switch (SS_OPCODE(inst)) {
+        ....
+        switch (SS_OPCODE(inst)) {
     #define DEFINST(OP,MSK,NAME,OPFORM,RES,FLAGS,O1,O2,I1,I2,I3,EXPR) \
-    case OP: \
-    EXPR; \
-    break;
-    ...
+      case OP: \
+      EXPR; \
+      break;
+      ...
     #include "ss.def"
     #undef DEFINST
-    ....
-    }
+      ....
+      }
 
-    /* execute next instruction */
-    local_regs_PC = local_next_PC;
-    local_next_PC += SS_INST_SIZE;
+      /* execute next instruction */
+      local_regs_PC = local_next_PC;
+      local_next_PC += SS_INST_SIZE;
     }
 
  
@@ -116,30 +116,26 @@ Doug Burger 再次使用黑魔法把一个冗长的 switch case 语句缩成了�
 
     while (TRUE)
     {
-    ....
-    switch (SS_OPCODE(inst)) {
+      ....
+      switch (SS_OPCODE(inst)) {
 
-    case ADD:
-    /* 完成“加法”动作*/
-    break;
-    case JMP:
-    /* 完成“跳转”动作*/
-    break;
-    case SUB:
-    /* 完成“减法”动作*/
-    break;
-    ...
-    }
+      case ADD: /* 完成“加法”动作*/
+      break;
+      case JMP: /* 完成“跳转”动作*/
+      break;
+      case SUB: /* 完成“减法”动作*/
+      break;
+      ...
+      }
 
-    /* execute next instruction */
-    local_regs_PC = local_next_PC;
-    local_next_PC += SS_INST_SIZE;
+      /* execute next instruction */
+      local_regs_PC = local_next_PC;
+      local_next_PC += SS_INST_SIZE;
     }
 
 
 
 而“加法”的 ISA 语义动作就是定义在 `ss.def` 中的 `SET_GPR(RD, GPR(RS) + GPR(RT)`，他做的事情就是把 RS 寄存器中的值与 RT 寄存器的值加一加，放到 RD 寄存器中（又是宏！）。
-
 
 
 **点评**：译码部分 Doug Burger 处理得比较花哨的，用了很多黑魔法，这样的优点是保持代码的短小精悍，而且在修改 ISA 时只要修改一个地方（`ss.def`）就可以了，保证了代码的可扩展性。缺点是由于每一次我们用 Macro 来取代函数，导致不能静态地检查错误（函数调用时，如果实参类型和函数签名不匹配，编译器会报错），可读性也不是很高。

@@ -7,7 +7,7 @@ title: "SimpleScalar源代码分析(2)：内存管理"
 （两年前的笔记，如果有空还是想完成这个系列的。）
 
 
-内存部分的代码位于 memory.c 和 memory.h 文件中。SimpleScalar 在模拟分页机制时使用了反向页表，示意图如下：
+内存部分的代码位于 [memory.c](https://github.com/onesuper/SimpleScalar/blob/master/memory.c) 和 [memory.h](https://github.com/onesuper/SimpleScalar/blob/master/memory.h) 文件中。SimpleScalar 在模拟分页机制时使用了反向页表，示意图如下：
 
 
 ![](http://ww4.sinaimg.cn/mw690/534218ffjw1e6nkrn1fr6j20bi08wt94.jpg)
@@ -22,15 +22,14 @@ title: "SimpleScalar源代码分析(2)：内存管理"
 因为 SimpleScalar 是一个软件模拟器，因此所谓的物理页其实就是主机中的一段内存空间，而物理页号就是一个 char 指针<sup>[1]</sup>。
 
 
-每次调用 `mem_newpage()`<sup>memory.c: 110</sup>创建新的页面，SimpleScalar 都会在堆上创建一个大小为 `MD_PAGE_SIZE`<sup>[2]</sup>的页面，然后新建一个页表项，插入到页表中，并将 `page_count` 加一。
+每次调用 [mem_newpage()](https://github.com/onesuper/SimpleScalar/blob/master/memory.c) 创建新的页面，SimpleScalar 都会在堆上创建一个大小为 `MD_PAGE_SIZE`<sup>[2]</sup>的页面，然后新建一个页表项，插入到页表中，并将 `page_count` 加一。
 
 
 ### 内存对象
 
-Memory 对象中包含了一个指针数组 `ptab[]`（也就是页表），和三个计数器，分别记录了页表总数、页表失效数和页表访问总数。
+[Memory](https://github.com/onesuper/SimpleScalar/blob/master/memory.h) 对象中包含了一个指针数组 `ptab[]`（也就是页表），和三个计数器，分别记录了页表总数、页表失效数和页表访问总数。
 
 {% highlight c %}
-/* memory.h: 75*/
 struct mem_t {
   struct mem_pte_t *ptab[MEM_PTAB_SIZE]; /* 反向页表 */
   counter_t page_count;			/* 分配页表总数 */
@@ -46,7 +45,6 @@ struct mem_t {
 
 
 {% highlight c %}
-/* memory.h: 68*/
 struct mem_pte_t {
   struct mem_pte_t *next;	/* 同一个桶中的下一个 PTE */
   md_addr_t tag;		    /* 虚拟页号的标签 */
@@ -81,7 +79,6 @@ SimpleScalar 在虚实地址映射的过程中还完成了页表失效的模拟�
 
 
 {% highlight c %}
-/* memory.h: 119 */
 #define MEM_PAGE(MEM, ADDR)						\
   (/* 将地址映射到散列表中，并尝试匹配链表第一项 */	\
    ((MEM)->ptab[MEM_PTAB_SET(ADDR)]					\
@@ -98,7 +95,6 @@ SimpleScalar 在虚实地址映射的过程中还完成了页表失效的模拟�
 
 
 {% highlight c %}
-/* memory.c: 78 */
 byte_t *
 mem_translate(struct mem_t *mem, md_addr_t addr)		
 {
@@ -119,7 +115,7 @@ mem_translate(struct mem_t *mem, md_addr_t addr)
 ### 内存访问器
 
 
-内存访问的核心是 `mem_access()`<sup>memory.c:140</sup> 函数，它负责在主机内存和虚拟内存之间拷贝数据。`mem_access()` 可以访问从起始地址 `addr` 开始连续 `nbytes` 的字节，`nbytes`必须为 2 的指数倍 ，而且不能超过页大小，否则会报错，同时 `addr` 必须也为 2 的指数倍。<sup>[3]</sup>
+内存访问的核心是 [mem_access()](https://github.com/onesuper/SimpleScalar/blob/master/memory.c) 函数，它负责在主机内存和虚拟内存之间拷贝数据。`mem_access()` 可以访问从起始地址 `addr` 开始连续 `nbytes` 的字节，`nbytes`必须为 2 的指数倍 ，而且不能超过页大小，否则会报错，同时 `addr` 必须也为 2 的指数倍。<sup>[3]</sup>
 
 
 事实上是，`mem_access()` 是一个访问器，通过它可以构造出更复杂的内存访问函数（通过函数指针），用它构造的函数有：
@@ -155,7 +151,7 @@ mem_translate(struct mem_t *mem, md_addr_t addr)
 
 ### Notes
 
-1. 定义在 `host.h` 文件中。
-1. 页大小为 8KB，定义在 `machine.h` 文件中。
+1. 定义在 [host.h](https://github.com/onesuper/SimpleScalar/blob/master/host.h) 文件中。
+1. 页大小为 8KB，定义在 [machine.h](https://github.com/onesuper/SimpleScalar/blob/master/machine.h) 文件中。
 1. [Data alignment: Straighten up and fly right](http://www.ibm.com/developerworks/library/pa-dalign/)
 1. 一个形象的比喻就是[银行](http://blog.chengyichao.info/2010/11/17/memory-management/)。
