@@ -5,7 +5,7 @@ category: Comic
 tags: [Comic]
 ---
 
-[Dreamsome#78](http://dreamsome.org/1078)。
+[Dreamsome#78](http://dreamsome.org/1078)
 
 Q: 为什么你觉得虎扑有用而果壳没用？
 
