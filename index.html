@@ -7,7 +7,10 @@ title: "~"
 
 <div class="content">
 
-{% for post in site.posts limit:5 %}
+{% for post in site.posts limit:10 %}
+
+{% if post.category == 'Comic' %}
+
 <div class="postview">
   
   <div class="pagetitle">
@@ -21,5 +24,8 @@ title: "~"
 </div>
 
 <hr>
+
+{% endif %}
+
 {% endfor %}
 </div>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "开源网络漫画"
-category: idea
+category: Comic
 tags: [Comic]
 ---
 
