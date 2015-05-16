@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "63"
+title: "计算机延时"
 category: Comic
 tags: [Comic]
 ---

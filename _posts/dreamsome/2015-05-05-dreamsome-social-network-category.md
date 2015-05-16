@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "78"
+title: "社交网络"
 category: Comic
 tags: [Comic]
 ---
