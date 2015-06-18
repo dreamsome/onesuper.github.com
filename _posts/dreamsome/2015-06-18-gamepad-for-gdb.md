@@ -6,8 +6,7 @@ tags: [Comic]
 ---
 
 
-[43](http://dreamsome.org/1043/)
-
+[Dreamsome#43](http://dreamsome.org/1043/)
 
 
 ![](http://ww1.sinaimg.cn/mw690/534218ffjw1et7yhsbiayj20ig0f3q4j.jpg)
