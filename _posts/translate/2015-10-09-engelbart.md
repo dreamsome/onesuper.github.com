@@ -36,8 +36,10 @@ Engelbart 拥有一个意图，也可以叫目标，或者使命，他简明而�
 
 举个例子：
 
-如果你打开他 1968 年的 demo（youtube）然后看一看。在某一时刻，屏幕上的哪个远程助
-手，Bill Paxton 和 Engelbart 有一段对话。
+![](http://worrydream.com/Engelbart/nls1.jpg)
+
+如果你打开他 1968 年的 demo（youtube）然后看一看。在某一时刻，屏幕上的那个远程助
+手，Bill Paxton 与 Engelbart 之间有一段对话。
 
 你说：「哈！不就是 Skype 嘛！」
 
