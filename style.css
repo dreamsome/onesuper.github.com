@@ -1,17 +1,45 @@
 * {margin:0px; padding:0px;}
 
+#footer {
+   text-align: center;
+   font-size: 13px;
+}
+
+#blog-title {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+#blog-title:hover {
+    color: #FFF;
+}
+
+.blog-tab {
+    color: #677000;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.blog-tab:hover {
+    color: #FFF;
+}
 
 html {
     height: 100%;
 }
 
 body {
-    color: #444;
+    color: #333;
     line-height: 180%;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
+    background-image: url("//cdn.v2ex.co/assets/bgs/abovetheclouds.jpg");
+    background-repeat: repeat-x;
+    background-position: 50% 0;
     margin: 0;
     height: 100%;
-    font: 300 16px/1.75 'Helvetica Neue', Helvetica, 'Lantinghei SC', 'Hiragino Sans GB', sans-serif;
+    font-size: 15px;
+    font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti;
 }
 
 
@@ -22,18 +50,18 @@ a:hover { color:#FA0D0D;}
 h1,h2,h3,h4 {
     color: #333;
     margin: 20px 0;
-    font-weight: normal;
+    font-weight: bold;
 }
 
-h3 {font-size: 20px;  margin: 20px 0; }
-h4 {font-size: 18px;}
+h3 {font-size: 18px;  margin: 18px 0; }
+h4 {font-size: 16px;}
 
-ul, ol{padding-left: 25px;margin: 20px;}
+ul, ol{  25px;margin: 20px;}
 
 
 #nav {
     text-align: center;
-    background: #333;
+    background: #222;
     color: #fff;
     min-height: 24px;
     font-size: 0.875em;
@@ -42,13 +70,9 @@ ul, ol{padding-left: 25px;margin: 20px;}
 
 #nav a {
     padding: 0 8px; 
-    color: #ccc;
     text-decoration: none;
 }
 
-#nav a:hover {
-    color: white;
-}
 
 .chaos {
     -moz-column-width: 222px;
@@ -90,21 +114,34 @@ ul, ol{padding-left: 25px;margin: 20px;}
 }
 
 
-.content { width: 575px; margin: 50px auto; }
-
-
-
-p { margin: 15px 0; }
-
-hr {
-    height: 50px;
-    border: 0;
-    box-shadow: inset 0 12px 12px -15px rgba(0,0,0,0.5);
+.content {
+    background: #FFFFFF;
+    width: 690px;
+    margin: 0px auto;
+    border-radius: 0 0 6px 6px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    padding: 20px;
 }
 
 
+li { list-style-type: square; }
+p { margin: 14px 0; }
+
+hr {
+    margin: 20px auto;
+    border: 0;
+    border-bottom: 1px solid #eee;
+    width: 85%;
+}
+
+.postview {
+    padding: 20px;
+}
+
 p img {
-    max-width: 600px;
+    max-width: 580px;
     display: block;
     margin: 40px auto;
 }
@@ -130,9 +167,9 @@ code {
 
 .pagetitle h1{
     color: #333;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 24px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
     padding-bottom: 15px;
     margin: 0;
 }
@@ -152,9 +189,6 @@ code {
     font-size: 15px;
 }
 
-.pagetitle {
-    text-align: center;
-}
 
 .blogtitle a {
     font-size: 30px;

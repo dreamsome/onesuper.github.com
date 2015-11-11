@@ -1,8 +1,9 @@
 ---
-layout: default
+layout: page
 title: "About"
 ---
 
 
+to be added
 
-<a href="http://dreamsome.org/"><img src="http://dreamsome.org/p/1022.png"></a>
+

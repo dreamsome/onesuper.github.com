@@ -6,7 +6,6 @@
     <meta name="description" content="Cheng Yichao's Weblog">
     <meta name="author" content="Cheng Yichao">
     <link href="/style.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="/code.css" rel="stylesheet" type="text/css" media="all" />
     <link href="/atom.xml" rel="alternate" type="application/atom+xml" />  
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   </head>
@@ -15,12 +14,20 @@
 
 
     <div id="nav">
-      <a href="/"><b>幕后花絮</b></a>
-      <a href="/archive.html">所有文章</a>
+      <a href="/" id="blog-title">Dreamsome</a>
+      <a href="/archive.html" class="blog-tab">Archive</a>
+      <a href="/about.html" class="blog-tab">About</a>
     </div>
 
       {{ content }}
 
+    <div id="footer">
+    <p>
+      Dreamsome
+      <br>
+      © onesuper 2015 with help from Jekyll Bootstrap and Twitter Bootstrap
+    </p>
+    </div>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-30275856-1']);
