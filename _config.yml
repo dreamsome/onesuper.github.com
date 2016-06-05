@@ -1,5 +1,5 @@
-title: Neverland
-desc: Random thoughts from chaos
+title: OSX
+desc: Random thoughts
 permalink: /:year/:month/:day/:title 
 redirects: yes
 production_url : http://blog.chengyichao.info
