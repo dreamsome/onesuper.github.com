@@ -5,7 +5,9 @@ title: OSX
 {% include JB/setup %}
 
 
-这里是 onesuperX 的个人博客，偶尔也用来更新漫画的幕后花絮
+这里是 onesuperX 的个人博客。
+
+感性和理性的探戈。
 
 ### Published Posts
 
