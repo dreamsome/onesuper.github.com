@@ -54,17 +54,19 @@ A **cache miss** happens when the CPU fails to find such match. That means the t
 		    cache_hit = 1
 		 else
 		 	 cache_miss = 1
-         ...
-         if cache_miss:
-         	content = Memory[i]
-            cache.insert(i, content)
-            return content.op()
+	     ...
+	     if cache_miss:
+	     	content = Memory[i]
+	        cache.insert(i, content)
+	        return content.op()
 
 ### Sets
 
 Two observations can be derived from the picture of our hash table:
 
-* The more buckets a cache has, the less likely it is that collision<span class="sidenote">The term "collision" is inherited from the hash table. The hardware people call this condition "conflict" </span> will occur. In an extreme case, if the number of buckets is equal to  `N`, collision is eliminated entirely. 
+<span class="sidenote">The term "collision" is inherited from the hash table. The hardware people call this condition "conflict" </span>
+
+* The more buckets a cache has, the less likely it is that collision will occur. In an extreme case, if the number of buckets is equal to  `N`, collision is eliminated entirely. 
 * The average time to look up a certain memory location in cache is related to the average size of the chains. Finding the bucket requires only `O(1)` time, while searching for the desired key alongside the chain is time-consuming because it is sequential.
 
 The **buckets** are also known as **sets** in cache terminology.
@@ -109,8 +111,8 @@ It is possible to parallelize the process of entry searching by adding serval [c
 	    # This part can be parallelized through parallel curcuits
 	    # You will see the cuicuits later
 	    cache_hit = (( i == key1) && v1) || (( i == key2) && v2)
-        ...
-        
+	    ...
+
 By comparing simultaneously, CPU can judge whether cache hit or not very quickly.
 
 
@@ -123,7 +125,7 @@ Since the length of arrays in each bucket is limited(4 in this case), CPU can no
 Assume a cache is N-way set associative. If N is set too small, **conflict misses** will occur. Say N = 1, an application alternatively operates on memory location #5 and #13, both of which are hashed into the same cache set.  Hence, the reference to location #5 will lead to the eviction of the entry of #13 and vice versa.
 
 Although increasing N will potentially reduce conflict misses, more ways also means more power, larger chip-area and longer searching time, so how to choose a best N is [some kind of art](https://www.google.com.hk/search?q=Six+Basic+Cache+Optimizations&oq=Six+Basic+Cache+Optimizations).
- 
+
 
 ### LRU
 
@@ -160,7 +162,7 @@ In fact, each entry in the cache holds a **block** of data. So the memory locati
 		  return block[offset].op()
 
 Assume there are 16 bytes per block, the final picture of our cache looks like:
- 
+
 	[Bucket]|v| entry 1 |v| entry 2 |v| entry 3 |v| entry 4
 	[0]|1|  (1, B[16]) |0|      -      |0|      -      |0|   -
 	[1]|1|  (2, B[16]) |1|  (7, B[16]) |0|      -      |0|   -

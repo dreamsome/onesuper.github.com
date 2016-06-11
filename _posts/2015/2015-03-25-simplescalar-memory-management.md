@@ -29,29 +29,23 @@ title: "SimpleScalar源代码分析(2)：内存管理"
 
 [Memory](https://github.com/onesuper/SimpleScalar/blob/master/memory.h) 对象中包含了一个指针数组 `ptab[]`（也就是页表），和三个计数器，分别记录了页表总数、页表失效数和页表访问总数。
 
-{% highlight c %}
-struct mem_t {
-  struct mem_pte_t *ptab[MEM_PTAB_SIZE]; /* 反向页表 */
-  counter_t page_count;			/* 分配页表总数 */
-  counter_t ptab_misses;		/* 页表失效数  */
-  counter_t ptab_accesses;		/* 页表访问总数 */
-};
-{% endhighlight %}
+    struct mem_t {
+      struct mem_pte_t *ptab[MEM_PTAB_SIZE]; /* 反向页表 */
+      counter_t page_count;			/* 分配页表总数 */
+      counter_t ptab_misses;		/* 页表失效数  */
+      counter_t ptab_accesses;		/* 页表访问总数 */
+    };
 
 
 ### 页表项
 
 为了节约空间，SimpleScalar 将页表项（page table entry, PTE）组织成哈希表的形式，因此多个页表项可能映射到同一个桶中，因此每个页表项中还需要存一个 tag 域来解决碰撞，同一个桶中的页表项存成链表（collision chain），因此还需要一个 next 域。
 
-
-{% highlight c %}
-struct mem_pte_t {
-  struct mem_pte_t *next;	/* 同一个桶中的下一个 PTE */
-  md_addr_t tag;		    /* 虚拟页号的标签 */
-  byte_t *page;			    /* 物理页指针 */
-};
-{% endhighlight %}
-
+    struct mem_pte_t {
+      struct mem_pte_t *next;	/* 同一个桶中的下一个 PTE */
+      md_addr_t tag;		    /* 虚拟页号的标签 */
+      byte_t *page;			    /* 物理页指针 */
+    };
 
 
 ### 地址翻译
@@ -78,39 +72,32 @@ SimpleScalar 在虚实地址映射的过程中还完成了页表失效的模拟�
 `MEM_PAGE(MEM, ADDR)` 接收一个内存对象 MEM 和一个虚拟地址 ADDR。它先尝试匹配桶中的第一个页表项，如果匹配就返回物理页，反之，调用 `mem_translate()` 进行查找。
 
 
-{% highlight c %}
-#define MEM_PAGE(MEM, ADDR)						\
-  (/* 将地址映射到散列表中，并尝试匹配链表第一项 */	\
-   ((MEM)->ptab[MEM_PTAB_SET(ADDR)]					\
-    && (MEM)->ptab[MEM_PTAB_SET(ADDR)]->tag == MEM_PTAB_TAG(ADDR))	\
-   ? (/* 如果 tag 匹配，代表命中，返回页号 */			\
-      (MEM)->ptab_accesses++,						\
-      (MEM)->ptab[MEM_PTAB_SET(ADDR)]->page)				\
-   : (/* 失效，调用 tanslate 函数，进行接下来的翻译  */	\
-      mem_translate((MEM), (ADDR))))
-{% endhighlight %}
-
+    #define MEM_PAGE(MEM, ADDR)						\
+      (/* 将地址映射到散列表中，并尝试匹配链表第一项 */	\
+       ((MEM)->ptab[MEM_PTAB_SET(ADDR)]					\
+        && (MEM)->ptab[MEM_PTAB_SET(ADDR)]->tag == MEM_PTAB_TAG(ADDR))	\
+       ? (/* 如果 tag 匹配，代表命中，返回页号 */			\
+          (MEM)->ptab_accesses++,						\
+          (MEM)->ptab[MEM_PTAB_SET(ADDR)]->page)				\
+       : (/* 失效，调用 tanslate 函数，进行接下来的翻译  */	\
+          mem_translate((MEM), (ADDR))))
 
 如果调用了 `mem_translate()`，就说明该地址的页表项不在链表首项，因此要将 `ptab_misses`（失效次数）加一，然后沿着链表查找页表项，找到后并不马上返回物理页号，而是先将该页表项插到链表头。无论是否命中，`ptab_accesses` 的值都需要加一。
 
-
-{% highlight c %}
-byte_t *
-mem_translate(struct mem_t *mem, md_addr_t addr)		
-{
-  mem->ptab_misses++; mem->ptab_accesses++;
-  /* 沿着链表查找页表项 */
-  for (...) {
-    if (/* tag匹配 */) {
-	  /* 插到链表头 */
-	  return pte->page;
-	}
-  }
-  /* 没找到  */
-  return NULL;
-}
-{% endhighlight %}
-
+    byte_t *
+    mem_translate(struct mem_t *mem, md_addr_t addr)		
+    {
+      mem->ptab_misses++; mem->ptab_accesses++;
+      /* 沿着链表查找页表项 */
+      for (...) {
+        if (/* tag匹配 */) {
+          /* 插到链表头 */
+          return pte->page;
+        }
+      }
+      /* 没找到  */
+      return NULL;
+    }
 
 ### 内存访问器
 
@@ -152,6 +139,6 @@ mem_translate(struct mem_t *mem, md_addr_t addr)
 ### Notes
 
 1. 定义在 [host.h](https://github.com/onesuper/SimpleScalar/blob/master/host.h) 文件中。
-1. 页大小为 8KB，定义在 [machine.h](https://github.com/onesuper/SimpleScalar/blob/master/machine.h) 文件中。
-1. [Data alignment: Straighten up and fly right](http://www.ibm.com/developerworks/library/pa-dalign/)
-1. 一个形象的比喻就是[银行](http://blog.chengyichao.info/2010/11/17/memory-management/)。
+2. 页大小为 8KB，定义在 [machine.h](https://github.com/onesuper/SimpleScalar/blob/master/machine.h) 文件中。
+3. [Data alignment: Straighten up and fly right](http://www.ibm.com/developerworks/library/pa-dalign/)
+4. 一个形象的比喻就是[银行](http://blog.chengyichao.info/2010/11/17/memory-management/)。
