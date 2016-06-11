@@ -2,12 +2,12 @@
 layout: post
 title: "序列化Schema演化"
 category: technium
-tags: [notes]
+tags: [notes, Avro, Protocal Buffers]
 ---
 
-在计算机科学中，序列化通常是指把程序中的数据转化为某种可以存储、可以传输的形态。在一些语境中，序列化一个程序对象有时也被称作 marshal（列队集合） 一个对象。
+在计算机科学中，序列化通常是指把程序中的数据转化为某种可以存储、可以传输的形态。序列化一个程序对象有时也被称作 marshal（列队集合）。
 
-关于序列化一个重要的问题是：如果定义数据的格式发生了变化怎么办？现实世界中的数据总是在不断变化，[Schema evolution in Avro, Protocol Buffers and Thrift 这篇文章](http://martin.kleppmann.com/2012/12/05/schema-evolution-in-avro-protocol-buffers-thrift.html)讨论了目前几种流行的序列化方案是如何保持可扩展性的，这里做下记录。
+关于序列化一个重要的问题是：如果定义数据的格式发生了变化怎么办？现实世界中的数据总是在不断变化，[Schema evolution in Avro, Protocol Buffers and Thrift 这篇文章](http://martin.kleppmann.com/2012/12/05/schema-evolution-in-avro-protocol-buffers-thrift.html)讨论了目前几种流行的序列化方案是如何在设计上保持可扩展性的，这里做下记录。
 
 ### 序列化的四个阶段
 
