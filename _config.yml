@@ -1,5 +1,5 @@
 title: OSX
-desc: Random thoughts
+desc: Learn architecture the harder way
 permalink: /:year/:month/:day/:title 
 redirects: yes
 production_url : http://blog.chengyichao.info
