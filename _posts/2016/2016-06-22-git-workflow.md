@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Git工作流"
-category: tecknum
+category: technium
 tags: [git]
 ---
 

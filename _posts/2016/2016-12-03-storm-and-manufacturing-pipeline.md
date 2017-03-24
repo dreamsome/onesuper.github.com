@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Storm 和工厂流水线"
-category: tecknum
+category: technium
 tags: [storm, data]
 ---
 
