@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "#OSReads#Stop Clickbait"
+title: "标题党"
 category: technium
 tags: [reading, data]
 ---

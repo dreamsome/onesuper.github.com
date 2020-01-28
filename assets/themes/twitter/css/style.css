@@ -1,6 +1,6 @@
 /* Override some defaults */
 html {
-  background-color: #333;
+  background-color: #e9e9e9;
   font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti !important;
 }
 body {
@@ -11,18 +11,18 @@ body {
   border-top: none;
 }
 .container > footer p {
-  color: #eee;
+  color: #888;
   font-size: 1.0em;
   text-align: center; /* center align it with the container */
 }
 .container > footer p > a {
-  color: #555;
+  color: #333;
 }
 .container {
   width: 820px; /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
 }
 ul li {
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 180%;
   color: #333;
 }

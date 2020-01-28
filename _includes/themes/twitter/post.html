@@ -26,15 +26,15 @@
   </div>
   
   <div class="span4">
-    <h4>Published</h4>
-    <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
+    <h4>About</h4>
+    <div>My name is Cheng Yichao. I also use Dreamsome as my nickname on the Internet. </div>
+    
+    <br>
+    
+    <div>For the most part of my life so far, I am a programmer. I live in Shanghai. </div>
 
-  {% unless page.tags == empty %}
-    <h4>Tags</h4>
-    <ul class="tag_box">
-    {% assign tags_list = page.tags %}
-    {% include JB/tags_list %}
-    </ul>
-  {% endunless %}  
+    <br>
+    <div>If you want get in touch, please send me a DM via <a href="https://twitter.com/yichaocheng">Twitter</a>.</div>
+
   </div>
 </div>

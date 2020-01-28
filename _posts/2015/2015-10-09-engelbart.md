@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "谈谈Doug Engelbart"
+title: "Doug Engelbart"
 category: translate
 tags: [translate]
 

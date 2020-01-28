@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Storm 和工厂流水线"
+title: "优美的算法"
 category: technium
 tags: [storm, data]
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "效率"
+title: "效率与挑活"
 category: quotes
 tags: []
 ---
