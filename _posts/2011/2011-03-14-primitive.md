@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "原语"
+title: "计算机是人造科学"
 category: technium
 tags: []
 ---

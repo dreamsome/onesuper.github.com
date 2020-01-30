@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "GPU"
+title: "宠儿GPU"
 category: technium
 tags: [GPU, programming, parallel]
 
 ---
 
 
-### 宠儿
+### 宠儿GPU
 
 和 CPU 相比，GPU 是一种完全不同的 architecture，没有多级存储器，没有 CPU 那么 IMBA 的超长流水线和分支预测，但是它有更多的计算核心（Tesla 2050 有 448 个硬件核心），而且线程切换以硬件的方式完成，因此可以用成千上万的线程将访存延时隐藏起来（当一个线程等待数据时，其它线程立马抢占硬件资源），也就是说这几百个核可以一直不停地计算，直到得到最终的答案。
 

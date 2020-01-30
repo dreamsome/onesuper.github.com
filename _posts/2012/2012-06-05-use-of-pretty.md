@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "pretty"
+title: "有道不有道"
 category: translate
 tags: [translate]
 

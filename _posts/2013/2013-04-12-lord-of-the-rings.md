@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "编程语言之中土大战"
+title: "编程语言中土大战"
 category: technium
 tags: []
 ---
