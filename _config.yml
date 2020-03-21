@@ -1,5 +1,5 @@
 title: Cheng Yichao
-desc: On Tech, Product, Business
+desc: On Tech, Product, Market
 permalink: /:year/:month/:day/:title 
 redirects: yes
 production_url : http://chengyichao.co
