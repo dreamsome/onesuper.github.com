@@ -4,10 +4,8 @@ title: "Learnable Programming"
 category: translate
 ---
 
-看完 Bret Victor 的这篇 [Learnable Programming](http://worrydream.com/LearnableProgramming/)，收获还是不小的，帮助我想通了很多问题，这些问题虽然困扰了我很久，却一直苦于没有办法表达出来（比如为什么有的语言中要用 self 来引用对象）。趁假期在家翻译了一下，链接如下：
+看完 Bret Victor 的这篇 [Learnable Programming](http://worrydream.com/LearnableProgramming/)，收获还是不小的，帮助我想通了很多问题，这些问题虽然困扰了我很久，却一直苦于没有办法表达出来（比如为什么有的语言中要用 self 来引用对象），趁假期在家翻译了。
 
-
-[http://chengyichao.info/learnable-programming/](http://chengyichao.info/learnable-programming/)
 
 
 事实上第一次知道 Bret Victor 是因为他的这个 [presentation](http://www.google.com.hk/search?q=principle+on+inventing)。当时他提出了一种“原则理论”。
