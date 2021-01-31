@@ -16,7 +16,7 @@ tags: [productivity, Information]
 ### 原型模式(Prototype Pattern)
 
 
-在开始介绍之前首先来介绍一种设计模式——原型模式(Prototype Pattern)。Douglas Hofstadter 在 GEB [1] 这本书中提到我们大脑工作的方式就是基于属性的**原型建模**。
+在开始介绍之前首先来介绍一种设计模式——原型模式(Prototype Pattern)。Douglas Hofstadter 在 [GEB](https://book.douban.com/subject/1291204/) 这本书中提到我们大脑工作的方式就是基于属性的**原型建模**。
 
 书中举的一个例子是体育评论员解说一场比赛，当他谈论到一个你一无所知的新秀时，会从另一个为人所熟知的明星球员 A 身上提取特点来描述这名新秀，例如“速度快、平衡好，擅长寻找防守中漏洞的特点”，这个时候就可以看成新秀继承了明星球员 A 所有你熟知的属性。
 
@@ -24,10 +24,9 @@ tags: [productivity, Information]
 
 这便是基于原型的建模。球星 A 是新秀的原型，新秀又成为了别人的原型，原型可以不断派生出原型。其中蕴含的哲理是：哪怕是最具体的实例也可以作为某类事件的通用例子。Douglas Hofstadter 在谈到原型模式时这样说道：“**这种具体中带着普遍性的思想具有深远的意义。**”
 
-Steve Yegge 称原型模式为“普适性”设计模式，是他知道的最好的用来设计开发性系统的原则，用它设计出来的系统往往能够经受住时间的考验。虽然人们可能没有意识到，但是原型模式出现在了各种编程序言和应用系统中，如 Lisp、Eclipse、Wyvern、XML 和 Bigtable。[2]
+Steve Yegge 称原型模式为[“普适性”设计模式](https://steve-yegge.blogspot.com/2008/10/universal-design-pattern.html)，是他知道的最好的用来设计开发性系统的原则，用它设计出来的系统往往能够经受住时间的考验。虽然人们可能没有意识到，但是原型模式出现在了各种编程序言和应用系统中，如 Lisp、Eclipse、Wyvern、XML 和 Bigtable。
 
-Figma 前设计负责人 Rasmus Andersson 说过  Figma 的 Component 是他做过最创新的设计，在他这篇博客中同样提到了Figma Component 借鉴了 JavaScript 原型的思想。[3]
-    
+Figma 前设计负责人 Rasmus Andersson 说过  Figma 的 Component 是他做过最创新的设计，在他[这篇博客](https://www.figma.com/blog/components-in-figma )中同样提到了Figma Component 借鉴了 JavaScript 原型的思想。    
 
 ### Roam 中的原型继承
 
@@ -40,7 +39,7 @@ Figma 前设计负责人 Rasmus Andersson 说过  Figma 的 Component 是他做�
 
 无限层级的 Block 嵌套结构也允许我们使用这名新秀再去定义其他的球员，换言之，Roam 提供了一种可以无限 Remix 文本的能力。因此，**Roam Research 不是关于记笔记，而是笔记的复用**。
 
-通过 Block reference 继承原型最大的好处在于，即使用自己的语言重写的内容，仍然能够保留原来的原型之间的继承关系 [4]。所有修改不再是复制、粘贴后产生的冗余副本，而是相同信息的不同版本，这种**原子性**降低了在相似、重复信息中搜寻信息的成本。
+通过 Block reference 继承原型最大的好处在于，即使用自己的语言重写的内容，仍然能够[保留原来的原型之间的继承关系](https://twitter.com/Conaw/status/1240104928661475328)。所有修改不再是复制、粘贴后产生的冗余副本，而是相同信息的不同版本，这种**原子性**降低了在相似、重复信息中搜寻信息的成本。
 
 
 ## 信息的组织
@@ -49,7 +48,7 @@ Tiago Forte 在《渐进式总结》中说：“把内容从一个地方转移�
 
 在 Roam Research 对信息最重要假设就是**信息输入的位置不重要**：不像抽屉柜和基于目录树的 Wiki 那样，Roam 中每一次的记录和创作不需要考虑系统现有的信息结构，例如提前规划记下的内容从属于哪个分类、或应该被打上何种标签。
 
-分类的缺点在于作为一种索引信息的方式它的**可扩展的性**太低：同一个在一个时间点只能被划分到一个分类下，这导致对分类者要求很高：如果定义的分类太粗，每个分类下内容的可发现性就很低，但如果如果分得太细，因为类目数变多，类别自身的可发现新就降低了。
+分类的缺点在于作为一种索引信息的方式它的**可扩展的性**太低：同一个在一个时间点只能被划分到一个分类下，这导致对分类者要求很高：如果定义的分类太粗，每个分类下内容的可发现性就很低，但如果如果分得太细，因为类目数变多，类别自身的可发现性就降低了。
 
 标签系统其实也好不到哪里去，虽然同一篇内容可以被打上不同标签，但是后期在根据标签查找内容时仍旧需要从一大堆**松散或耦合度很高**的内容中找到自己感兴趣的某一个段落。
 
@@ -60,17 +59,17 @@ Roam 中 Daily Notes 的设计就是为了让信息以线性的方式输入系�
 
 Roam 通过双向链接打开了通往过去和未来路径，帮助使用者在自己的过去和未来之间进行协作。不同于 Notion 的 backlink 指向一个 Page，而 Roam 的双向链接是以 Block 为单元，并以 Page 作为容器进行聚合展示。
 
-**看起来反向链接是在找 Page，其实是在找 Block**。这种**细粒度的信息管理机制**让它很快在所有笔记软件中脱颖而出，被很多知识精英用来实践 How to Take Smart Notes[5] 、 常青笔记[6]和卡片盒[7]这些记的笔记的方法或者方法论。
+**看起来反向链接是在找 Page，其实是在找 Block**。这种**细粒度的信息管理机制**让它很快在所有笔记软件中脱颖而出，被很多知识精英用来实践 [How to Take Smart Notes]() 、 [常青笔记](https://notes.andymatuschak.org/Evergreen_notes)和[卡片盒](https://zettelkasten.de/)这些记的笔记的方法或者方法论。
 
 
-双向链接利用 Block 语句中的元素建立索引，很像搜索引擎中的反向索引(inverted index)，在必要时用户还可以创建具有更高抽象层级的标签，或者Attribute [8]，对 Block 进行标记，当然在绝大部分时候，你都不需要这么做，而仅仅只是敲下双方括号！这种轻量级的交互带来的优势会在下一个章节中提到。
+双向链接利用 Block 语句中的元素建立索引，很像搜索引擎中的反向索引(inverted index)，在必要时用户还可以创建具有更高抽象层级的标签，或者[Attribute](https://roamresearch.com/#/app/help/page/LJOc7nRiO)，对 Block 进行标记，当然在绝大部分时候，你都不需要这么做，而仅仅只是敲下双方括号！这种轻量级的交互带来的优势会在下一个章节中提到。
 
 和搜索引擎几乎一样的是，Roam Research 提供了基于双向链接的**集合运算**——通过使用 AND、OR、NOT 这些逻辑运算对自己感兴趣的 Block 进行检索(Filter+Query)。这种**灵活自定义查询**的能力，不就是知识库搜索引擎的 NoCode 实现吗？
 
-只有在需要时(例如整理或 Remix信息)，才通过双向链接从各个地方收集笔记的概念，类似于软件工程领域里的**好莱坞法则（控制反转）**——“不要打电话给我们，合适的话我们会打给你” [9]。
+只有在需要时(例如整理或 Remix信息)，才通过双向链接从各个地方收集笔记的概念，类似于软件工程领域里的**好莱坞法则**（[控制反转](https://en.wikipedia.org/wiki/Inversion_of_control)）——“不要打电话给我们，合适的话我们会打给你”。
 
 
-同时由于双向链接本身就是一个 Page，而非一种元数据(标签)，它下面的 Block 可以用其他双向链接进行索引，因此能构建出图的结构[10]。我们完全可以将双向链接 看成某种地位更高的 Block (原型)，只不过它们本身可以用来对内容进行检索，因此通常我们会为自己所熟知的概念建立双向链接。
+同时由于双向链接本身就是一个 Page，而非一种元数据(标签)，它下面的 Block 可以用其他双向链接进行索引，因此能构建出图的结构。我们完全可以将双向链接 看成某种地位更高的 Block (原型)，只不过它们本身可以用来对内容进行检索，因此通常我们会为自己所熟知的概念建立双向链接。
   
 ## 信息的交互
 
@@ -95,16 +94,5 @@ Remix 是一个不断回顾旧的知识体系，并且将已有想法编织成�
 
 Roam Research 通过双向链接这种索引在相互关联的信息之间建立连接，通过 Block reference 沉淀已有想法之间的关联，发展处出新的想法，让使用者获得思想的复利，而**寻找、收集、连接想法，这一切过程都不是发生在脑子里**，且是以非常简单的动作和交互来完成。
 
-## 引用
 
-- [1] https://book.douban.com/subject/1291204/
-- [2] https://steve-yegge.blogspot.com/2008/10/universal-design-pattern.html 
-- [3] https://www.figma.com/blog/components-in-figma 
-- [4] https://twitter.com/Conaw/status/1240104928661475328
-- [5] https://book.douban.com/subject/30216624/
-- [6] https://notes.andymatuschak.org/Evergreen_notes
-- [7] https://zettelkasten.de/
-- [8] https://roamresearch.com/#/app/help/page/LJOc7nRiO
-- [9] https://en.wikipedia.org/wiki/Inversion_of_control
-- [10] https://twitter.com/yichaocheng/status/1332313769775546368
         
