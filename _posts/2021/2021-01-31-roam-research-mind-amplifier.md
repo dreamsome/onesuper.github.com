@@ -6,7 +6,7 @@ tags: [productivity, Information]
 ---
 
 
-本文从有关信息的角度出发，讨论 Roam Research 如何通过重新定义**信息的表示**、**信息的组织**和**信息的交互**，带来了生产力工具的复兴。
+尝试从有关信息的角度出发，解释 Roam Research 如何通过重新定义**信息的表示**、**信息的组织**和**信息的交互**，带来生产力工具的复兴。
 
 ## 信息的表示
 
@@ -24,7 +24,7 @@ tags: [productivity, Information]
 
 这便是基于原型的建模。球星 A 是新秀的原型，新秀又成为了别人的原型，原型可以不断派生出原型。其中蕴含的哲理是：哪怕是最具体的实例也可以作为某类事件的通用例子。Douglas Hofstadter 在谈到原型模式时这样说道：“**这种具体中带着普遍性的思想具有深远的意义。**”
 
-Steve Yegge 称原型模式为[“普适性”设计模式](https://steve-yegge.blogspot.com/2008/10/universal-design-pattern.html)，是他知道的最好的用来设计开发性系统的原则，用它设计出来的系统往往能够经受住时间的考验。虽然人们可能没有意识到，但是原型模式出现在了各种编程序言和应用系统中，如 Lisp、Eclipse、Wyvern、XML 和 Bigtable。
+Steve Yegge 称原型模式为[“普适性”设计模式](https://steve-yegge.blogspot.com/2008/10/universal-design-pattern.html)，是他知道的最好的用来设计开发性系统的原则，用它设计出来的系统往往能够经受住时间的考验。虽然人们可能没有意识到，但是原型模式出现在了各种编程语言和应用系统中，如 Lisp、Eclipse、Wyvern、XML 和 Bigtable。
 
 Figma 前设计负责人 Rasmus Andersson 说过  Figma 的 Component 是他做过最创新的设计，在他[这篇博客](https://www.figma.com/blog/components-in-figma )中同样提到了Figma Component 借鉴了 JavaScript 原型的思想。    
 
@@ -59,7 +59,7 @@ Roam 中 Daily Notes 的设计就是为了让信息以线性的方式输入系�
 
 Roam 通过双向链接打开了通往过去和未来路径，帮助使用者在自己的过去和未来之间进行协作。不同于 Notion 的 backlink 指向一个 Page，而 Roam 的双向链接是以 Block 为单元，并以 Page 作为容器进行聚合展示。
 
-**看起来反向链接是在找 Page，其实是在找 Block**。这种**细粒度的信息管理机制**让它很快在所有笔记软件中脱颖而出，被很多知识精英用来实践 [How to Take Smart Notes]() 、 [常青笔记](https://notes.andymatuschak.org/Evergreen_notes)和[卡片盒](https://zettelkasten.de/)这些记的笔记的方法或者方法论。
+**看起来反向链接是在找 Page，其实是在找 Block**。这种**细粒度的信息管理机制**让它很快在所有笔记软件中脱颖而出，被很多知识精英用来实践 [How to Take Smart Notes]() 、 [常青笔记](https://notes.andymatuschak.org/Evergreen_notes)和[卡片盒](https://zettelkasten.de/)这些记笔记的方法或者方法论。
 
 
 双向链接利用 Block 语句中的元素建立索引，很像搜索引擎中的反向索引(inverted index)，在必要时用户还可以创建具有更高抽象层级的标签，或者[Attribute](https://roamresearch.com/#/app/help/page/LJOc7nRiO)，对 Block 进行标记，当然在绝大部分时候，你都不需要这么做，而仅仅只是敲下双方括号！这种轻量级的交互带来的优势会在下一个章节中提到。
@@ -92,7 +92,7 @@ Remix 是一个不断回顾旧的知识体系，并且将已有想法编织成�
 
 写作往往来源于交流和阅读过程中，因为共鸣而产生的观点，抑或是经过一系列开放性研究后，想法在重新连接、组合后的自然涌现，而非确定了一个写作标题后，寻找支持你观点的论据的过程。
 
-Roam Research 通过双向链接这种索引在相互关联的信息之间建立连接，通过 Block reference 沉淀已有想法之间的关联，发展处出新的想法，让使用者获得思想的复利，而**寻找、收集、连接想法，这一切过程都不是发生在脑子里**，且是以非常简单的动作和交互来完成。
+Roam Research 通过双向链接这种索引在相互关联的信息之间建立连接，通过 Block reference 沉淀已有想法之间的关联，发展出新的想法，让使用者获得思想的复利，而**寻找、收集、连接想法，这一切过程都不是发生在脑子里**，且是以非常简单的动作和交互来完成。
 
 
         
