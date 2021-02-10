@@ -15,7 +15,7 @@ tags: [productivity, collaboration]
 
 任务管理也类似，一旦我将一个任务标记为完成，这个信息就相当于广播给了系统里所有对这条信息感兴趣的人，省得别人一个一个来问我有没有完成。
 
-组织因为分工不同，逐渐分野出了不同的生产力(创作)工具，来完成特定的目标，它们是结构化的信息，不同的工具有自己的抽象对象和基本操作，有的是表单，有的是看板，而有的是图表或矢量组件。
+组织因为分工不同，逐渐分野出了不同的生产力(创作)工具，来完成特定的目标，它们有着各自的结构，不同的工具有自己的抽象对象和基本操作，有的是表单，有的是看板，而有的是图表或矢量组件。
 
 创作其实是：**以文档为接口**、面向未来的人，进行协作，信息流动的方向是从**现在**到**未来**。企业通过人与人的协作，产生信息的流动，让原本被少数人掌握的信息，传递给上下游，从而完成一件更大的事情。
 
@@ -35,7 +35,7 @@ tags: [productivity, collaboration]
 
 沟通的缺点是它是反规模化的，Kevin Kwok 在 [The Arc of Collaboration](https://kwokchain.com/2019/08/16/the-arc-of-collaboration/) 中指出 Slack 不是公司的交通管制工具，而是出车祸时的报警电话(Exception handler)。当没有一种机制确保每个人都了解更新、知道上下文时，可以用 Slack，而使用 Slack 必然会打扰人的注意力，降低生产力。而一个公司走向成熟的标志是在越来越多的工作流中移除对 Slack 的依赖，让沟通发生在离生产力工具更近的地方，从而让反馈路径变得更短。
 
-一个典型的代表是 Figma，人们在 Figma 中协作时，不需要通过发送一条消息来告诉别人文件的更新。Julian Lehr [认为 Superhuman 这样的 Email 客户端有机会成为协作的 meta-layer](https://julian.digital/2020/01/17/superhuman-the-productivity-meta-layer/)，NLP 只需要分析出收到信息的意图，为用户推荐对应的 action，要么改变任务的状态，要么创建一个日历事件、要么标记为 Read-it-later。
+一个典型的代表是 Figma，人们在 Figma 中协作时，不需要通过发送一条消息来告诉别人文件的更新。
 
 ## 沟通即创作
 
@@ -46,6 +46,8 @@ tags: [productivity, collaboration]
 当我们在 IM 中严肃地进行回复和观点输出时，也可以被认为是一种简单的创作，Slack 提供了列表、加粗、引用等富文本格式来帮助我们阐述想法。Slack 中也有很多第三方集成，使用起来就像一个网络化的文件管理器，所有文档都是可以搜索的。另一方面，越来越多的生产力工具(Notion、Figma、Github)，在自己的工作量流中加入了提及其他人的功能。
 
 但这仅仅是边界的模糊而已，还称不上是紧密地结合。Benedict Evans 在 [Office, messaging and verbs](https://www.ben-evans.com/benedictevans/2015/5/21/office-messaging-and-verbs) 给出了一种可能性，他引用了微软一个概念产品的视频。在那个视频勾勒的未来里，**我们不仅仅是在工作流中加一个铃铛入口，或者在 IM 中能够快速预览文档的链接**，所有的东西都是结构化的数据，没有工作流的切换，没有软件的边界，一切都是消息，像是某种 Facebook，企业版的 Facebook。
+
+Julian Lehr [认为 Superhuman 这样的 Email 客户端有机会成为协作的 meta-layer](https://julian.digital/2020/01/17/superhuman-the-productivity-meta-layer/)，NLP 只需要分析出收到信息的意图，为用户推荐对应的 action，要么改变任务的状态，要么创建一个日历事件、要么标记为 Read-it-later。
 
 我自己的一个观察是，有价值的沟通往往会伴随着新的想法产生，随着信息的充分交换，可能会得出有价值的结论(take-aways)。但今天 IM 工具并没有提供工具来**索引我们的聊天内容**，方便别人下次在提问题前就发现它们。
 
