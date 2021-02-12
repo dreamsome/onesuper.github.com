@@ -11,7 +11,7 @@ body {
   border-top: none;
 }
 .container > footer p {
-  color: #888;
+  color: #8e8e8e;
   font-size: 1.0em;
   text-align: center; /* center align it with the container */
 }
@@ -57,24 +57,33 @@ ul li {
   -moz-columns: 3;
 }
 
+.recent .post {
+  margin: 20px 10px;
+  color: #ddd;
+}
+
+.recent a {
+  font-size: 18px;
+}
+
 .posts .post {
   margin: 10px;
   width: 180px;
   color: #ddd;
 }
 
-.posts .post a:link {
+.post a:link {
   color: #666;
 }
 
-.posts .post a:visited {
-  color: #666;
-}
-
-.posts .post a:hover {
+.post a:hover {
   color: #ff9900;
-  text-decoration: none;
 }
+
+.post a:visited {
+  color: #666;
+}
+
 
 /* Page header tweaks */
 .page-header {
@@ -95,7 +104,11 @@ a:link {
 }
 
 a:visited {
-  color: #b36b00;
+  color: #ff9900;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 
@@ -130,4 +143,27 @@ a:visited {
 	border:1px solid #4C964D;
 	color:#FFF;
 }
-	
+
+p {
+  color: #1c1c1c;
+}
+h1 {
+  font-weight: 500;
+  color: #333;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 50px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+#secondary a {
+  color:#8e8e8e;
+}

@@ -3,3 +3,6 @@ desc: Engineer. Data evangelist. Believer in tools for thought.
 permalink: /:year/:month/:day/:title 
 redirects: yes
 production_url : http://chengyichao.co
+JB :
+  version : 0.2.13
+  archive_path: /archive.html

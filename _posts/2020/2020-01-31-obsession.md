@@ -5,9 +5,7 @@ category: technium
 tags: [reading, product]
 ---
 
-[from here](http://www.paulgraham.com/genius.html)
-
-很幸运在人生中的这个时间读到 PG 的这篇文章。
+很幸运在人生中的这个时间读到 PG 的[这篇文章](http://www.paulgraham.com/genius.html)。
 
 
 「很多人在成长的过程中新的想法会越来越少，不是因为他们老了，一个很重要的原因是他们已经定型，不再折腾那些年轻时折腾过的不靠谱 side project 了。解决之道就是继续折腾，这样虽然很苦很难，但只有采取行动这些想法才不会被淹没，当然它们可能是错的，但起码是一件有趣的事情。」

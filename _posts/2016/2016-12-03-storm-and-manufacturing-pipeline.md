@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "优美的算法"
+title: "优美也粗暴的算法"
 category: technium
 tags: [storm, data]
 ---
 
-[from here](http://nathanmarz.com/blog/history-of-apache-storm-and-lessons-learned.html)
 
-Nathan Marz 有一次在博客中说他在 Storm 中实现的那个用来解决消息容错问题的算法是他开发过最好的算法，而且得益于自己在计算机科学教育（one of the few times in my career I can say I would not have come up with it without a good computer science education.）
+Nathan Marz 有一次在[博客](http://nathanmarz.com/blog/history-of-apache-storm-and-lessons-learned.html)中说他在 Storm 中实现的那个用来解决消息容错问题的算法是他开发过最好的算法，而且得益于自己在计算机科学教育（one of the few times in my career I can say I would not have come up with it without a good computer science education.）
 
 这个算法最优美的地方在于，Storm 在追踪每一条消息（Tuple）是否被所有的下游 Bolt 都正常处理仅仅用 20个字节，正是利用了任意一个数字 XOR 两次都等于 0 的这个特性。
 

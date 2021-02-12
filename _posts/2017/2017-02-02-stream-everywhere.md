@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "流计算的明天"
+title: "所有业务逻辑都是流计算"
 category: quotes
 tags: []
 ---
 
-[from here](https://www.youtube.com/watch?v=fU9hR3kiOK0)
-
-传统的 Web 应用架构（通常指基于 HTTP 协议的后端），都试图实现服务层的无状态，所谓的无状态并不是指应用程序本身可以无状态，而是把繁琐的状态维护工作交给 DB 来完成。状态的维护的工作包含：
+在 DDIA 作者[看来](https://www.youtube.com/watch?v=fU9hR3kiOK0)，传统的 Web 应用架构（通常指基于 HTTP 协议的后端），都试图实现服务层的无状态，所谓的无状态并不是指应用程序本身可以无状态，而是把繁琐的状态维护工作交给 DB 来完成。状态的维护的工作包含：
 
 1. Replication：主数据库需要通知从数据库一些变量的值发生了变化，一系列命令式的状态变化（mutation）通知拆开看其实是一个个的不可变的事件或者实时（event/fact），参考 MySql 的 binlog。
 2. 索引：在数据更新时，更新相应的索引。
