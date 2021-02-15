@@ -8,61 +8,96 @@
     <hr>
     <div class="pagination">
       <ul>
-      {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
-      {% else %}
+        {% if page.previous %}
+        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr;
+            Previous</a></li>
+        {% else %}
         <li class="prev disabled"><a>&larr; Previous</a></li>
-      {% endif %}
+        {% endif %}
         <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
-      {% if page.next %}
+        {% if page.next %}
         <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
-      {% else %}
+        {% else %}
         <li class="next disabled"><a>Next &rarr;</a>
-      {% endif %}
+          {% endif %}
       </ul>
     </div>
     <hr>
     {% include JB/comments %}
   </div>
-  
-  <div id="secondary" class="span4">
+
+  <div class="sidebar span4">
+
     <h4>About</h4>
 
     <img style='width:195px; margin: 5px;border:0px solid; border-radius: 5px;' src='/images/photo.jpeg'>
     <br>
 
     <div>
-      My name is Cheng Yichao. I am a programmer, data evangelist and believer in tools for thought. 
-      I live in Shanghai. 
+      I live in Shanghai and work at Jike.
+
+      I am a programmer, data evangelist and believer in tools for thought.
     </div>
     <br>
 
-    <div>
-    I have translated a techical book, <a href="https://book.douban.com/subject/25703412/">嗨翻C语言</a>
-    and <a href="/learnable-programming">Learnable Programming</a>.
+    <h4>Project& Translation</h4>
+    <ul>
+
+      <li>
+        <a href="https://github.com/onesuper/pandasticsearch">Pandasticsearch</a>
+      </li>
+
+      <li>
+        <a href="https://www.notion.so/Dreamsome-b35a6436e31e4bbb8b924499bbb50be6">Web Comic</a>
+      </li>
+ 
+      <li><a href="https://book.douban.com/subject/25703412/">Head First C</a>
+      </li>
+
+      <li><a href="/learnable-programming">Learnable Programming</a>
+      </li>
+    </ul>
+
+    <h4>Contact</h4>
+    <div class="social-menu">
+      <ul>
+        <li>
+          <a href="https://twitter.com/yichaocheng" target="_blank" rel="noopener">
+            <span class="screen-reader-text">Open Twitter account in new tab</span><svg class="icon" viewBox="0 0 24 24"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true">
+
+              <path
+                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+              </path>
+
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:onesuperclark@gmail.com" target="_blank" rel="noopener">
+            <span class="screen-reader-text">Contact via Email</span><svg class="icon" viewBox="0 0 24 24"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true">
+
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/chengyichao/" target="_blank" rel="noopener">
+            <span class="screen-reader-text">Open Linkedin account in new tab</span><svg class="icon"
+              viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true">
+
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
-
-    <br>
-
-    <div>
-      You can also find me on <a href="https://twitter.com/yichaocheng">Twitter</a>.
-    </div>
-
-    <h4>Projects</h4>
-    <div>
-      <a href="https://github.com/onesuper/pandasticsearch">Pandasticsearch</a> 
-    </div>
-
-    <div>
-       <a href="https://www.notion.so/Dreamsome-b35a6436e31e4bbb8b924499bbb50be6">Web Comic</a>
-    </div>
-
-    <h4>Publications</h4>
-    <div> 78-3-319-27137-8_2 </div>
-    <div> HPCC.2014.162 </div>
-    <div> 978-3-319-11197-1_4 </div>
-    <div> IPDPSW.2014.96 </div>
-
 
   </div>
 </div>

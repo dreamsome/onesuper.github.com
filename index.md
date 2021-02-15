@@ -12,9 +12,10 @@ title: Dreamsome
 <div class='recent'>
   {% for post in site.posts limit:10 %}
     <div class='post'>
-    <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-    <br><br>{{post.date | date: '%Y/%m/%d' }}
-    <hr>
+      {{post.date | date: '%Y/%m/%d' }}
+      <br><br>
+      <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+      <hr>
     </div>
   {% endfor %}
 </div>
