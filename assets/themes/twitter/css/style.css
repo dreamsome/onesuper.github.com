@@ -35,6 +35,10 @@ blockquote, pre, code {
   color: #333;
 }
 
+blockquote p {
+  margin-bottom: 10px;
+}
+
 a:link {
   color: #ff9900;
 }
