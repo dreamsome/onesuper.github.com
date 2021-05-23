@@ -7,24 +7,21 @@ category: technium
 
 
 
-
-
-
 ## 开源的市场规律
 
 
 
-说起开源人们总是想到：安全、协作、低成本、积极发展和自由这些正能量的词汇，甚至有人把开源形容为一种[精神](https://hackernoon.com/why-we-need-open-source-spirit-g2573yzv)，而开源的反面闭源总是和限制、封闭、不思进取、厂商锁定联系在一起。当云厂商与开源供应商出现利益冲突时，很多人也站在了「正义」的一边，指责云厂商不劳而获。
+说起开源人们总是想到：安全、协作、低成本、积极发展和自由这些正能量的词汇，甚至有人[把开源视为一种精神](https://hackernoon.com/why-we-need-open-source-spirit-g2573yzv)，而开源的反面闭源总是和限制、封闭、不思进取、厂商锁定联系在一起。当云厂商与开源供应商出现利益冲突时，很多人也站在了「正义」的一边，指责云厂商不劳而获。
 
 我认为支撑起开源发展的既不是情怀，也不是对自由的宗教式信仰，而是开源背后的市场规律。一方面是需求的崛起，信息化建设依赖大量科技公司，而开源软件满足了这些科技公司发展的需要。和音乐一样，软件天然是数字化的商品，分发成本为零，于是市场上出现了 Github 这样聚集需求的平台方，Github 提高了开源项目发现的效率，每当程序员在开发一个新功能前，都会在 Github 上先搜索有没有开源项目能够满足需要。
 
 另一方面，作为回报 Github 也让写出有用程序的程序员得到了大量的关注 ，虽然他们可能无法获得直接的经济回报，但对他们的职业发展有很大帮助。开源不是一种纯粹的利他行为的另一个证明是，出现了很多基于开源项目的商业公司，长期以来 Hadoop 生态的最大贡献者是 Cloudera 和 Hortonworks 这两家商业公司。
 
-Maxime Beauchemin 曾经在 Airbnb 工作期间创造了 Airflow 和 Superset，本文中他提出了使用开源 BI 的三个优势：方便扩展、借助社区的力量以及避免被厂商锁定。[他提到](https://preset.io/blog/future-of-business-intelligence/)，开源之所以能够「接管」 modern data stack 的各种工作场景，很重要一点是开源软件更容易被发现和测试，软件分发的主要成本来自于怎么让用户知道你（搜寻成本），和怎么教育用户学会使用它（交易成本）。
+Maxime Beauchemin 曾经在 Airbnb 工作期间创造了 Airflow 和 Superset，[他提到使用开源 BI 的三个优势](https://preset.io/blog/future-of-business-intelligence/)：方便扩展、借助社区的力量以及避免被厂商锁定。而开源之所以能够「接管」 modern data stack 的各种工作场景，很重要一点是开源软件更容易被发现和测试，软件分发的主要成本来自于怎么**让用户知道你**，和怎么教育用户**学会使用它**。
 
 
 
-> Simply put, open source is a superior approach at building and distributing software because it provides important guaranties around how software can be discovered, tried, operated, collaborated on and packaged. For those reasons, it is not surprising that it has taken over most of the modern data stack: infrastructure, databases, orchestration, data processing, AI/ML and beyond.
+> 简单地说，开源是构建和发布软件的一种卓越方法，因为它围绕着如何发现、使用、操作、协作和打包软件提供了重要的保障。由于这些原因，它已经接管了现代数据堆栈的大部分：基础设施、数据库、协调、数据处理、AI/ML 和其他。
 
 
 
@@ -32,17 +29,18 @@ Maxime Beauchemin 曾经在 Airbnb 工作期间创造了 Airflow 和 Superset，
 
 
 
-Alex Danco 在自己的 [newsletter](https://alexdanco.com/2020/10/08/making-is-show-business-now/) 中推荐了 Nadia Eghbal 的 [Working in Public: The Making and Maintenance of Open Source Software](https://www.amazon.com/Working-Public-Making-Maintenance-Software/dp/0578675862)，这本书阐述了开源工作方式发生的变化。
+[Alex Danco 在自己的 newsletter](https://alexdanco.com/2020/10/08/making-is-show-business-now/) 中推荐了 Nadia Eghbal 的 [Working in Public: The Making and Maintenance of Open Source Software](https://www.amazon.com/Working-Public-Making-Maintenance-Software/dp/0578675862)，这本书阐述了开源工作方式发生的变化。
 
 
 
 > 90 年代和今天之间发生了一些重要的变化。如果你看一下现在大多数开源项目，做事的人和旁观者的分布是明显倾斜的：常见情况是，项目中 95% 的工作是由一个核心的人完成的，甚至可能只有一个开发者，而长尾的「贡献者」实际上更像是用户或消费者：他们有时 Pull Request，有时标记一些 Issue，但他们更像是观看足球比赛的球迷，而不是主要的参与者。
 >
-> 
-
-由于 Github 这样的平台出现，软件创建、发布和发现变得更加容易，开源不再是人与人之间平等的协作性（collaborative）社区，而成为了**创造者的一场 Show**，在这场 Show 中，创造者除了维护代码本身，还需要维护人们的注意力。由于任何人加入项目都没有门槛，热门的项目会被小白用户占领，甚至[创造者不得不面对参与者的众口难调，有时还会受到恶毒的言语攻击](https://avocadotoast.live/episodes/70/?t=3332)。这似乎又印证了人月神话中 Fred Brooks 的观点：「在一个任务中增加边缘工程师会产生更多的成本，而非收益。」
 
 
+由于 Github 这样的平台出现，软件创建、发布和发现变得更加容易，开源不再是人与人之间平等的协作性（collaborative）社区，而成为了**创造者的一场 Show**，在这场 Show 中，创造者除了维护代码本身，还需要维护人们的注意力。由于任何人加入项目都没有门槛，热门的项目会被小白用户占领，甚至[创造者不得不面对参与者的众口难调，有时还会受到恶毒的言语攻击](https://avocadotoast.live/episodes/70/?t=3332)。
+
+
+这似乎也印证了《人月神话》中 Fred Brooks 的观点：「在一个任务中增加边缘工程师会产生更多的成本，而非收益。」
 
 Danco 说：
 
@@ -56,7 +54,7 @@ Danco 说：
 
 
 
-**我们塑造了我们的工具，工具反过来又塑造了我们。**Github 这样的开源平台加速了软件的发现，也意味着任何人都有可能在没有背景的情况下看到你的 Show，人们更倾向于开发更模块化和即插即用的开源软件，因为一个关注面更小的工具不仅受众更大，所需要的信任成本也更低。相同的逻辑同样出现在视频媒体的生产端。
+**我们塑造了我们的工具，工具反过来又塑造了我们。**Github 这样的开源平台加速了软件的发现，也意味着任何人都有可能在没有背景的情况下看到你的项目，人们更倾向于开发更模块化和即插即用的开源软件，因为一个关注面更小的工具不仅受众更大，所需要的信任成本也更低。相同的逻辑同样出现在视频媒体的生产端。
 
 
 
@@ -80,11 +78,8 @@ Danco 说：
 
 
 
-赚钱诚可贵，道德价更高，若为自由故，二者皆可抛。
+> 赚钱诚可贵，道德价更高，若为自由故，二者皆可抛。——无名氏
 
-
-
-开源货币化难题和开源的道德困境背后其实是一个问题——自由与限制天然是矛盾的。任何的限制行为无论是增加协议来防止云厂商吸血，还是增加条款来防止他人用软件来做作恶，都会提高**交易成本**，让开源软件被更少的人使用。
 
 
 
@@ -92,12 +87,13 @@ Danco 说：
 
 
 
-Databricks 的 CEO Ali Ghodsi 认为对于云厂商「吸血」开源项目的指责[是一种红鲱鱼](https://www.computerweekly.com/blog/Open-Source-Insider/Databricks-CEO-Managing-open-source-in-the-cloud-is-hard)：
+Databricks 的 CEO Ali Ghodsi 认为[对于云厂商「吸血」开源项目的指责是一种红鲱鱼](https://www.computerweekly.com/blog/Open-Source-Insider/Databricks-CEO-Managing-open-source-in-the-cloud-is-hard)：
 
-> We believe this value lies in the vendor’s ability to deliver open source software as a service. The cloud is an inevitability these vendors will need to embrace and prove their performance at scale to cope with the increase in demand for edge computing. Instead of wasting time on pushing cloud providers away, they should be focused on building great SaaS offerings.
 
-> Limiting the license of their software will just lead to less adoption and community-driven innovation around those open source projects, which poses a far bigger existential threat to their business.
 
+>我们认为这种价值在于供应商将开源软件作为一种服务提供的能力。云是一种不可避免的现象，这些厂商将需要接受并证明他们在规模上的性能，以应对边缘计算需求的增加。他们不应该把时间浪费在推开云供应商上，而应该专注于建立伟大的 SaaS 产品。
+
+> 限制他们的软件许可只会导致围绕这些开源项目的采用和社区驱动的创新减少，这对他们的业务构成更大的生存威胁。
 
 
 之所以云厂商可以轻松夺走开源项目辛苦播种多年的果实，是因为开源软件没有内在的货币化价值，因此开源供应商不得不把 SaaS 模式作为主要变现方式。
@@ -110,7 +106,7 @@ Databricks 的 CEO Ali Ghodsi 认为对于云厂商「吸血」开源项目的�
 
 
 
-最近国际开源界对于道德和平权的争论[方兴未艾](https://jhuo.ca/post/rms_return_fsf/)，数据科学从业者 Christopher Moran 把机器学习正面临的道德危机归咎于[开源许可证的过分自由](https://thegradient.pub/machine-learning-ethics-and-open-source-licensing/)。
+最近[国际开源界对于道德和平权的争论](https://jhuo.ca/post/rms_return_fsf/)方兴未艾，数据科学从业者 Christopher Moran 把机器学习正面临的道德危机归咎于[开源许可证的过分自由](https://thegradient.pub/machine-learning-ethics-and-open-source-licensing/)。
 
 
 
@@ -126,25 +122,25 @@ Databricks 的 CEO Ali Ghodsi 认为对于云厂商「吸血」开源项目的�
 
 
 
-试想一下，如果每个开源贡献者都试图在项目中增加自己的限制，那么项目会变得难以管理，尤其对 Linux 或 PyTorch 这样的大型项目来说。但今天很多的项目（比如 FastAI），它们往往依靠几个贡献者就完成了大部分工作，正如 Alex Danco 所说，「Communities are for collaborators; Platforms are for creators」。
+试想一下，如果每个开源贡献者都试图在项目中增加自己的限制，那么项目会变得难以管理，尤其对 Linux 或 PyTorch 这样的大型项目来说。但今天很多项目（比如 FastAI），它们往往依靠几个贡献者就完成了大部分工作，正如 Alex Danco 所说，「Communities are for collaborators; Platforms are for creators」。
 
 
 
 其次，机器学习和传统开源项目也有很大区别，在机器学习中，系统的核心不是源代码，而是训练出来的模型，模型的版权不应该继承自训练它的代码，一个类比是用开源画图软件画出来的艺术画的版权不应该继承画画软件的许可证。
 
 
+开源的货币化难题和道德困境背后其实是一个问题——自由与限制天然是矛盾的。任何的限制行为无论是增加协议来防止云厂商吸血，还是增加条款来防止他人用软件来做作恶，都会提高**交易成本**，让开源软件被更少的人使用。
+
 
 ## 自由反面不是不自由
 
 
 
-有时候开源并没有我们想象的那么美好，我们对开源的固有印象很多都是营销的结果，[本文](https://www.snowflake.com/blog/choosing-open-wisely/)分享了 Snowflake 对于开源的态度，作者之一是 Snowflake 的创始人和产品负责人 Benoit Dageville。
-
-本文认为束缚组织数据的罪魁祸首，并不是封闭的文件格式，而是用户的应用程序代码和业务逻辑，以及停机维护带来的经济损失，开放文件格式只不过是一种掩人耳目的说法。
+有时候开源并没有我们想象的那么美好，我们对开源的固有印象很多都是营销的结果，Snowflake 的创始人和产品负责人 Benoit Dageville[分享了 Snowflake 对于开源的态度](https://www.snowflake.com/blog/choosing-open-wisely/)，他认为束缚组织数据的罪魁祸首，并不是封闭的文件格式，而是用户的应用程序代码和业务逻辑，以及停机维护带来的经济损失，开放文件格式只不过是一种掩人耳目的说法。
 
 开放文件格式相当于将物理存储的细节暴露给用户，它不仅带来了应用开发的复杂性，同时还让创新的速度变慢，并带来一系列安全、治理和一致性的问题，反面教材分别是 ISAM(IBM 的文件系统)，CODASYL(Cobol 数据模型) 和 Hadoop：
 
-> The history of database systems has plenty of examples like ISAMs or CODASYL showing us that physical access to data leads to an innovation dead end. More recently, adopters of Hadoop found themselves managing costly, complex, and unsecured environments that didn’t deliver the promised performance benefits. In a world with direct file access, introducing new capabilities translates into delays in realizing the benefits of those capabilities, complexity for application developers and, potentially, governance breaches. This is another point arguing for abstracting away the internal representation of data to enable more value to our customers, while supporting ingestion and export of open file formats.
+> 数据库系统的历史上有很多例子，如 ISAM 或 CODASYL，向我们展示了对数据的物理访问导致创新的死胡同。最近，Hadoop 的采用者发现自己管理着昂贵、复杂和不安全的环境，而这些环境并没有带来承诺的性能优势。在一个有直接文件访问的世界里，引入新的功能会导致延迟实现这些功能的好处、应用开发者的复杂性以及潜在的治理漏洞。这是主张抽象化数据的内部表示的另一点，以使我们的客户获得更多的价值，同时支持开放文件格式的摄入和导出。
 
 只要提供开放的协议和 API，用户就可以导出它们，一样可以避免厂商锁定。事实上，开放不一定是创新和成本效益的同义词，开放只是人们追求创新、安全、性能、成本和简单过程中使用的手段，而不是目标，Snowflake 的目标是为客户提供价值。
 

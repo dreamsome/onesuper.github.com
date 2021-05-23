@@ -3,9 +3,6 @@ layout: default
 title: Dreamsome
 ---
 {% include JB/setup %}
-<h2>Newsletter</h2>
-
-在 <a href="https://mindbicycle.hedwig.pub/">Hedwig </a>订阅我的 Newsletter
 
 <h2>Recent</h2>
 
